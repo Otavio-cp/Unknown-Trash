@@ -22,7 +22,7 @@ public class Andar : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D))
         {
-            Move.y = 1;
+            Move.x = 1;
         }
         if (Input.GetKey(KeyCode.S))
         {
