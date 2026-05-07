@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class Coletar : MonoBehaviour
 {
+
+    
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,4 +17,10 @@ public class Coletar : MonoBehaviour
     {
         
     }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(collision.gameObject);
+    }
 }
+
+
