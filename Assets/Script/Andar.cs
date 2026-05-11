@@ -3,6 +3,7 @@ using UnityEngine;
 public class Andar : MonoBehaviour
 {
     public int vel = 5;
+    
     void Start()
     {
 
@@ -11,22 +12,22 @@ public class Andar : MonoBehaviour
 
     void Update()
     {
-        Vector3 Move = Vector3.zero;
+        Vector3 move = Vector3.zero;
         if (Input.GetKey(KeyCode.W))
         {
-            Move.y = 1;
+            move.y = 1;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            Move.x = -1;
+            move.x = -1;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            Move.x = 1;
+            move.x = 1;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            Move.y = -1;
+            move.y = -1;
         }
 
 
@@ -34,7 +35,8 @@ public class Andar : MonoBehaviour
 
 
 
-
-        transform.position += Move.normalized * vel * Time.deltaTime;
+        
+        
+        transform.Translate(move.normalized * vel * Time.deltaTime); 
     }
 }
