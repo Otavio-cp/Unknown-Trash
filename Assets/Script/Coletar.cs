@@ -23,7 +23,7 @@ public class Coletar : MonoBehaviour
     {
 
 
-        Andar.scal += 0.2f;
+        
         Destroy(gameObject);
         
 
