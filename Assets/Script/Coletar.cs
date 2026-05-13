@@ -19,13 +19,14 @@ public class Coletar : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D collider2D)
     {
+
+
+        Andar.scal += 0.2f;
+        Destroy(gameObject);
         
-        if (other.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
+
     }
 }
 

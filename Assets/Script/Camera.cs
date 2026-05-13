@@ -1,17 +1,14 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class Andar : MonoBehaviour
+public class Camera : MonoBehaviour
 {
-    public int vel = 5;
-    public static float scal = 1f;
-    private Coletar coletar;
+    int velCamera = 5;
     void Start()
     {
-        coletar = GetComponentInParent<Coletar>();
+        
     }
 
-
+    // Update is called once per frame
     void Update()
     {
         Vector3 move = Vector3.zero;
@@ -31,7 +28,6 @@ public class Andar : MonoBehaviour
         {
             move.y = -1;
         }
-
 
 
         if (Input.GetKey(KeyCode.UpArrow))
@@ -57,10 +53,7 @@ public class Andar : MonoBehaviour
 
 
 
-        transform.Translate(move.normalized * vel * Time.deltaTime); 
-    }
-    private void OnTriggerEnter2D(Collider2D collision2D)
-    {
-        transform.localScale += new Vector3(scal, scal, scal);
+
+        transform.Translate(move.normalized * velCamera * Time.deltaTime);
     }
 }
