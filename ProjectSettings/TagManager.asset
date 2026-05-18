@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - botao
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: borda
+    uniqueID: 11456125
+    locked: 0
   - name: cenario
     uniqueID: 1848352817
     locked: 0
