@@ -1,15 +1,23 @@
+using UnityEditor.Localization.Editor;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Andar : MonoBehaviour
 {
     public int vel = 5;
-    public static float scal = 1f;
-    private Coletar coletar;
     int itensPegos = 0;
+    private Vector2 startPos;
+    public Vector2 targetPos;
+    public float speed = 5f;
+    private bool voltando = false;
+
+    public static float scal = 1f;
+    
+    
     void Start()
     {
-        coletar = GetComponentInParent<Coletar>();
+        startPos = transform.position;
     }
 
 
@@ -60,7 +68,17 @@ public class Andar : MonoBehaviour
         }
 
 
+        
+        Vector2 destinoAtual = voltando ? startPos : targetPos;
 
+        
+        transform.position = Vector2.MoveTowards(transform.position, destinoAtual, speed * Time.deltaTime);
+
+        
+        if ((Vector2)transform.position == destinoAtual)
+        {
+            voltando = !voltando;
+        }
 
 
         transform.Translate(move.normalized * vel * Time.deltaTime); 
