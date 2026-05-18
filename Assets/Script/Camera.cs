@@ -46,7 +46,7 @@ public class Camera : MonoBehaviour
         {
             move.y = -1;
         }
-
+        
 
 
 

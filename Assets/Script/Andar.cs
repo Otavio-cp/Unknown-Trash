@@ -6,6 +6,7 @@ public class Andar : MonoBehaviour
     public int vel = 5;
     public static float scal = 1f;
     private Coletar coletar;
+    int itensPegos = 0;
     void Start()
     {
         coletar = GetComponentInParent<Coletar>();
@@ -51,7 +52,12 @@ public class Andar : MonoBehaviour
             move.y = -1;
         }
 
-
+        if (itensPegos >= 3)
+        {
+            scal += 0.1f;
+            transform.localScale = new Vector3(scal, scal, scal);
+            itensPegos = 0;
+        }
 
 
 
@@ -61,6 +67,7 @@ public class Andar : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
-        transform.localScale += new Vector3(scal, scal, scal);
+        
+        itensPegos += 1;
     }
 }
