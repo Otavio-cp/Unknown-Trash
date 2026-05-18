@@ -30,7 +30,7 @@ public class BottomMenu : MonoBehaviour
         }
         else
         {
-            onMenuClose.Invoke();
+        onMenuClose.Invoke();
         }
     }
 

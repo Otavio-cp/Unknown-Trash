@@ -7,17 +7,14 @@ public class Andar : MonoBehaviour
 {
     public int vel = 5;
     int itensPegos = 0;
-    private Vector2 startPos;
-    public Vector2 targetPos;
-    public float speed = 5f;
-    private bool voltando = false;
+    
 
     public static float scal = 1f;
     
     
     void Start()
     {
-        startPos = transform.position;
+        
     }
 
 
@@ -69,16 +66,7 @@ public class Andar : MonoBehaviour
 
 
         
-        Vector2 destinoAtual = voltando ? startPos : targetPos;
-
         
-        transform.position = Vector2.MoveTowards(transform.position, destinoAtual, speed * Time.deltaTime);
-
-        
-        if ((Vector2)transform.position == destinoAtual)
-        {
-            voltando = !voltando;
-        }
 
 
         transform.Translate(move.normalized * vel * Time.deltaTime); 
