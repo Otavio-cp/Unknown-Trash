@@ -1,15 +1,20 @@
+using UnityEditor.Localization.Editor;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Andar : MonoBehaviour
 {
     public int vel = 5;
-    public static float scal = 1f;
-    private Coletar coletar;
     int itensPegos = 0;
+    
+
+    public static float scal = 1f;
+    
+    
     void Start()
     {
-        coletar = GetComponentInParent<Coletar>();
+        
     }
 
 
@@ -60,7 +65,8 @@ public class Andar : MonoBehaviour
         }
 
 
-
+        
+        
 
 
         transform.Translate(move.normalized * vel * Time.deltaTime); 
