@@ -8,7 +8,7 @@ public class Andar : MonoBehaviour
 {
     public int vel = 5;
     int itensPegos = 0;
-    
+    public static int tamanho = 0;
 
     public static float scal = 1f;
     
@@ -63,18 +63,19 @@ public class Andar : MonoBehaviour
             scal += 0.1f;
             transform.localScale = new Vector3(scal, scal, scal);
             itensPegos = 0;
+            
         }
 
 
-        
-        
+
+
 
 
         transform.Translate(move.normalized * vel * Time.deltaTime); 
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
-        
+        tamanho += 1;
         itensPegos += 1;
     }
 }

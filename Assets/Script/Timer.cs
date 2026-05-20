@@ -17,6 +17,8 @@ public class Timer : MonoBehaviour
     {
         _timer.text = timer.ToString("N0");
 
+        timer -= Time.deltaTime;
+
         if (timer <= 0f)
         {
             Destroy(gameObject);
