@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 082bed448cab79a44a9bf94f939f9455
+guid: 7fecb898e17bee74e9df3ae70f7666f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4463344764434658157
-    second: imagem (14)_0
+      213: 3413166888850720166
+    second: derrota_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: imagem (14)_0
+      name: derrota_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1156
-        height: 648
+        width: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d633a3a5a6cf0fd30800000000000000
-      internalID: 4463344764434658157
+      spriteID: 6a58211a3310e5f20800000000000000
+      internalID: 3413166888850720166
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      imagem (14)_0: 4463344764434658157
+      derrota_0: 3413166888850720166
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
