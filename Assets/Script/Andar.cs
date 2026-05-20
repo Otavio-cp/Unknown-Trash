@@ -21,42 +21,14 @@ public class Andar : MonoBehaviour
 
     void Update()
     {
-        Vector3 move = Vector3.zero;
-        if (Input.GetKey(KeyCode.W))
-        {
-            move.y = 1;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            move.x = -1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            move.x = 1;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            move.y = -1;
-        }
 
+        float movimentoX = Input.GetAxis("Horizontal"); // A e D
+        float movimentoZ = Input.GetAxis("Vertical");   // W e S
 
+        Vector3 movimento = new Vector3(movimentoX, 0, movimentoZ);
 
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            move.y = 1;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            move.x = -1;
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            move.x = 1;
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            move.y = -1;
-        }
+        transform.position += movimento * vel * Time.deltaTime;
+
 
         if (itensPegos >= 3)
         {
@@ -71,7 +43,7 @@ public class Andar : MonoBehaviour
 
 
 
-        transform.Translate(move.normalized * vel * Time.deltaTime); 
+        
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
     {

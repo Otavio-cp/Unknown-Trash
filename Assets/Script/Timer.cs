@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class Timer : MonoBehaviour
 {
-    public static float timer = 60;
+    public static float timer = 10;
     
     public TMP_Text _timer;
     void Start()
