@@ -17,9 +17,13 @@ public class Vitoria : MonoBehaviour
             onVictory.Invoke();
         }
 
+
+    }
+    public void Onvictory()
+    {
         if (Timer.timer <= 0)
         {
             Destroy(gameObject);
-        }
+}
     }
 }
