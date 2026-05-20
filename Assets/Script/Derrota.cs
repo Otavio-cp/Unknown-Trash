@@ -5,10 +5,11 @@ using UnityEngine.Events;
 public class Derrota : MonoBehaviour
 {
     public UnityEvent onDerrota;
+    float tempo = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        Timer.timer = tempo;
     }
 
     // Update is called once per frame
@@ -23,7 +24,7 @@ public class Derrota : MonoBehaviour
 
     public void Onderrota()
     {
-        if (Timer.timer <= 0)
+        if (tempo <= 0)
         {
             onDerrota.Invoke();
         }

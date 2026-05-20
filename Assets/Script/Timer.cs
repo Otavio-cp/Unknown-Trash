@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     public static float timer = 10;
     
-    public TMP_Text _timer;
+    public static TMP_Text _timer;
     void Start()
     {
         _timer = GetComponent<TMP_Text>();
