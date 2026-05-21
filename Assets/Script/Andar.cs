@@ -1,5 +1,5 @@
-using UnityEditor.Localization.Editor;
-using UnityEditor.ShaderGraph;
+
+
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Events;
@@ -10,26 +10,28 @@ public class Andar : MonoBehaviour
     int itensPegos = 0;
     public static int tamanho = 0;
 
+    private Rigidbody2D _rb;
+
     public static float scal = 1f;
-    
-    
+
+    float _horizontal;
+    float _vertical;
     void Start()
     {
-        
+        _rb = GetComponent<Rigidbody2D>();
     }
 
 
     void Update()
     {
+        float _horizontal = Input.GetAxis("Horizontal"); 
+        float _vertical = Input.GetAxis("Vertical");   
 
-        float movimentoX = Input.GetAxis("Horizontal"); // A e D
-        float movimentoZ = Input.GetAxis("Vertical");   // W e S
+        
 
-        Vector3 movimento = new Vector3(movimentoX, 0, movimentoZ);
+        _rb.linearVelocity = new Vector2(_horizontal, _vertical) * vel;
 
-        transform.position += movimento * vel * Time.deltaTime;
-
-
+        
         if (itensPegos >= 3)
         {
             scal += 0.1f;
@@ -37,13 +39,6 @@ public class Andar : MonoBehaviour
             itensPegos = 0;
             
         }
-
-
-
-
-
-
-        
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
