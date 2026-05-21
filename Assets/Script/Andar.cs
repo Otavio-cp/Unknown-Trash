@@ -19,6 +19,7 @@ public class Andar : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        Application.targetFrameRate = 60;
     }
 
 

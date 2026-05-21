@@ -4,15 +4,15 @@ using UnityEngine.Events;
 
 public class Derrota : MonoBehaviour
 {
-    public UnityEvent onDerrota;
+    public UnityEvent onderrota;
     
 
     public void Onderrota()
     {
         if (Timer.timer <= 0f)
         {
-            onDerrota.Invoke();
-            
+            onderrota.Invoke();
+
         }
     }
 
