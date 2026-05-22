@@ -4,8 +4,6 @@ using UnityEngine;
 public class Contadordetamanho : MonoBehaviour
 {
     public TMP_Text Contador;
-    
-    
     void Start()
     {  
         Contador = GetComponent<TMP_Text>();

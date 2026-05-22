@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayQuit : MonoBehaviour
 {
-
     public void Jogar()
     {
         SceneManager.LoadScene("SampleScene");
@@ -12,6 +11,4 @@ public class PlayQuit : MonoBehaviour
     {
         Application.Quit();
     }
-
-   
 }

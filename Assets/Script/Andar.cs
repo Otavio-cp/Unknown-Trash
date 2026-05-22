@@ -14,31 +14,24 @@ public class Andar : MonoBehaviour
 
     public static float scal = 1f;
 
-    float _horizontal;
-    float _vertical;
+
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         Application.targetFrameRate = 60;
     }
-
-
     void Update()
     {
         float _horizontal = Input.GetAxis("Horizontal"); 
         float _vertical = Input.GetAxis("Vertical");   
 
-        
-
         _rb.linearVelocity = new Vector2(_horizontal, _vertical) * vel;
 
-        
         if (itensPegos >= 3)
         {
             scal += 0.1f;
             transform.localScale = new Vector3(scal, scal, scal);
             itensPegos = 0;
-            
         }
     }
     private void OnTriggerEnter2D(Collider2D collision2D)

@@ -8,8 +8,6 @@ public class Vitoria : MonoBehaviour
    
     public void Onvictory()
     {
-        
-
         if (_tamanho >= 10)
         {
             onVictory.Invoke();

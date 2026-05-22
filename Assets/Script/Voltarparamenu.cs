@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Voltarparamenu : MonoBehaviour
 {
-    
-
     void Update()
     {
         if (Input.GetKey(KeyCode.Escape))
@@ -14,6 +12,5 @@ public class Voltarparamenu : MonoBehaviour
             SceneManager.LoadScene("main_menu");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-
     }
 }
