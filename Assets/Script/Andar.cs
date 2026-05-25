@@ -7,25 +7,56 @@ using UnityEngine.Events;
 public class Andar : MonoBehaviour
 {
     public int vel = 5;
-    int itensPegos = 0;
-    public static int tamanho = 0;
+    public static int itensPegos = 0;
+    
 
-    private Rigidbody2D _rb;
+   
 
     public static float scal = 1f;
 
 
     void Start()
     {
-        _rb = GetComponent<Rigidbody2D>();
         Application.targetFrameRate = 60;
     }
     void Update()
     {
-        float _horizontal = Input.GetAxis("Horizontal"); 
-        float _vertical = Input.GetAxis("Vertical");   
+       Vector3 Move = Vector3.zero;
+        if (Input.GetKey(KeyCode.W))
+        {
+            Move.y = 1;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            Move.x = -1;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            Move.x = 1;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            Move.y = -1;
+        }
+        
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            Move.y = 1;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            Move.x = -1;
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            Move.x = 1;
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            Move.y = -1;
+        }
 
-        _rb.linearVelocity = new Vector2(_horizontal, _vertical) * vel;
+        transform.position += Move.normalized * vel * Time.deltaTime;
 
         if (itensPegos >= 3)
         {
@@ -36,7 +67,6 @@ public class Andar : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
-        tamanho += 1;
         itensPegos += 1;
     }
 }
