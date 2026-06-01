@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class Vitoria : MonoBehaviour
 {
     public UnityEvent onVictory;
-    float _tamanho = Andar.itensPegos;
+    float _tamanho = Player.itensPegos;
    
     public void Onvictory()
     {
