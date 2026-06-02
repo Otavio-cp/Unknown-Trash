@@ -3,7 +3,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Events;
-using Mono.Cecil;
 using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
@@ -18,18 +17,18 @@ public class Player : MonoBehaviour
     private float _horizonta = 0f;
     [SerializeField]
     private float _vertica = 0f;
-
-    public static int itensPegos = 0;
+    [SerializeField]
+    private int quantidadeParaCrescer = 3;
 
 
     public Animator playerAnim;
 
-    public static float scal = 1f;
-
+    public static float scal = 1.5f;
+    public static int itensPegos = 0;
 
     void Start()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 30;
     }
     void Update()
     {
@@ -38,10 +37,9 @@ public class Player : MonoBehaviour
 
         _rb.linearVelocity = new Vector2(_horizonta, _vertica) * vel;
 
-
-
         if (_horizonta!=0f)
         {
+            
             playerAnim.SetBool("isWalkX", true);
         }
         else
@@ -60,12 +58,11 @@ public class Player : MonoBehaviour
             playerAnim.SetBool("isWalkY", false);
         }
 
-
-        if (itensPegos >= 3)
+        if (itensPegos >= quantidadeParaCrescer)
         {
-            scal += 0.1f;
+            scal += 0.2f;
             transform.localScale = new Vector3(scal, scal, scal);
-            itensPegos = 0;
+            quantidadeParaCrescer += 3;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
