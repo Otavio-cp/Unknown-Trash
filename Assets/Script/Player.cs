@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 using UnityEngine.Events;
 using Mono.Cecil;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -30,7 +31,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 60;
+        Screen.fullScreen = true;
     }
+    
+
+
     void Update()
     {
         _horizonta = Input.GetAxis("Horizontal");
@@ -38,7 +43,10 @@ public class Player : MonoBehaviour
 
         _rb.linearVelocity = new Vector2(_horizonta, _vertica) * vel;
 
-
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("main_menu");
+        }
 
         if (_horizonta!=0f)
         {
@@ -65,7 +73,6 @@ public class Player : MonoBehaviour
         {
             scal += 0.1f;
             transform.localScale = new Vector3(scal, scal, scal);
-            itensPegos = 0;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
