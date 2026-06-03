@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 30;
         Screen.fullScreen = true;
     }
     
