@@ -43,10 +43,6 @@ public class Player : MonoBehaviour
 
         _rb.linearVelocity = new Vector2(_horizonta, _vertica) * vel;
 
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("main_menu");
-        }
 
         if (_horizonta!=0f)
         {
