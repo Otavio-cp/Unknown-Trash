@@ -12,6 +12,7 @@ public class Upgrade1Pontos : MonoBehaviour
 
     private TMP_Text preço;
 
+    
     private void Start()
     {
         preço = GetComponentInChildren<TMP_Text>();
