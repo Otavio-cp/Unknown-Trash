@@ -4,7 +4,8 @@ using UnityEngine.Events;
 
 public class Timer : MonoBehaviour
 {
-    public static float timer = 30;
+    public static float timer = 20;
+
     [SerializeField]
     private Animator _TimerAni;
 
@@ -19,13 +20,13 @@ public class Timer : MonoBehaviour
     {
         _timer.text = "Timer Remainder: " + timer.ToString("N0");
         timer -= Time.deltaTime;
-        if (timer <= 10)
+        if (timer <= 10f)
         {
-            _TimerAni.SetBool("isAniTimer", true);
+            _TimerAni.SetBool("isAniTime", true);
         }
         else
         {
-            _TimerAni.SetBool("isAniTimer", false);
+            _TimerAni.SetBool("isAniTime", false);
         }
     }
 }

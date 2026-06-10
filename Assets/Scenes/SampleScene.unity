@@ -1817,7 +1817,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -733.09, y: 434.46}
+  m_AnchoredPosition: {x: -736, y: 377.56}
   m_SizeDelta: {x: 281.81, y: 71.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447283485
@@ -1888,7 +1888,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3613,7 +3613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 410}
+  m_AnchoredPosition: {x: 0, y: 393}
   m_SizeDelta: {x: 401.71, y: 102.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &845461960
@@ -3671,7 +3671,7 @@ MonoBehaviour:
   m_fontSizeMax: 32767
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3727,7 +3727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8654e74e57dc3a4d9c7bff01814c710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timer
-  _TimerAni: {fileID: 0}
+  _TimerAni: {fileID: 845461963}
 --- !u!95 &845461963
 Animator:
   serializedVersion: 7
@@ -3820,6 +3820,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  telamorte: {fileID: 0}
 --- !u!114 &859268003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6737,7 +6738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1375859935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7861,6 +7862,7 @@ MonoBehaviour:
   onTelaUpgrade:
     m_PersistentCalls:
       m_Calls: []
+  telamorte: {fileID: 0}
 --- !u!1 &1526060344
 GameObject:
   m_ObjectHideFlags: 0
@@ -9777,6 +9779,7 @@ GameObject:
   - component: {fileID: 1709108551}
   - component: {fileID: 1709108550}
   - component: {fileID: 1709108549}
+  - component: {fileID: 1709108552}
   m_Layer: 0
   m_Name: Voltar
   m_TagString: Untagged
@@ -9848,9 +9851,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1375859935}
+      - m_Target: {fileID: 11500000, guid: f09ffd9e6957c3643860cdfe2829f3be, type: 3}
         m_TargetAssemblyTypeName: UnityEngine.UI.GraphicRaycaster, UnityEngine.UI
-        m_MethodName: CancelInvoke
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9898,6 +9901,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709108547}
   m_CullTransparentMesh: 1
+--- !u!114 &1709108552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709108547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09ffd9e6957c3643860cdfe2829f3be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tela_de_score
+  onScore:
+    m_PersistentCalls:
+      m_Calls: []
+  onTelaUpgrade:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: f09ffd9e6957c3643860cdfe2829f3be, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  telamorte: {fileID: 1215259096}
 --- !u!1 &1775607026
 GameObject:
   m_ObjectHideFlags: 0

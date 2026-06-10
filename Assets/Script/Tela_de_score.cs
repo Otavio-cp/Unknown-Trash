@@ -4,7 +4,8 @@ using UnityEngine.Events;
 public class Tela_de_score : MonoBehaviour
 {
     public UnityEvent onScore;
-    public UnityEvent onTelaUpgrade;    
+    public UnityEvent onTelaUpgrade;
+    public GameObject telamorte;
     void Update()
     {
         if (Timer.timer <= 0)
@@ -12,9 +13,16 @@ public class Tela_de_score : MonoBehaviour
             onScore.Invoke();
         }
     }
-
     public void OnIrParaATelaDeUpgrade()
     {
         onTelaUpgrade.Invoke();
+    }
+
+    public void voltar()
+    {
+
+        
+
+
     }
 }
