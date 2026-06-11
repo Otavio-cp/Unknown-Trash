@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Tela_de_score : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class Tela_de_score : MonoBehaviour
     }
     public void OnIrParaATelaDeUpgrade()
     {
-        onTelaUpgrade.Invoke();
+        SceneManager.LoadScene("Upgrade");
     }
 
     public void voltar()
