@@ -74,5 +74,6 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
         itensPegos += 1;
+        Destroy(collision2D.gameObject);
     }
 }

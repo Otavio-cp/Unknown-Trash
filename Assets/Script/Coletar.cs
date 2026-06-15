@@ -3,25 +3,44 @@ using UnityEngine.Audio;
 
 public class Coletar : MonoBehaviour
 {
-    public AudioSource Comer;
 
-    [SerializeField] private string targetTag = "lixo"; 
+    [SerializeField]
+    private AudioClip pickupSound;
 
-    void OnTriggerEnter2D(Collider2D other)
+    [SerializeField]
+    private AudioSource audioSource;
+
+    
+    private void Start()
     {
-        Destroy(gameObject);
-        
-        if (other.CompareTag(targetTag))
+        if (audioSource == null)
         {
-            // Play the audio if it is not already playing
-            if (!Comer.isPlaying)
-            {
-                Comer.Play();
-            }
-
+            audioSource = GetComponent<AudioSource>();
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player"))
+            return;
+
+        
+
+        if (audioSource != null)
+        {
+            
+            audioSource.PlayOneShot(pickupSound);
+            Destroy(gameObject, pickupSound.length);
+        }
+        else
+        {
+            
+            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            Destroy(gameObject);
+        }
+    }
+
+    
 }
 
 
