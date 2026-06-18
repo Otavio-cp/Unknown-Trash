@@ -1,46 +1,30 @@
 using UnityEngine;
-using UnityEngine.Audio;
 
 public class Coletar : MonoBehaviour
 {
+    [SerializeField] private AudioClip _pickupSound;
 
-    [SerializeField]
-    private AudioClip pickupSound;
-
-    [SerializeField]
-    private AudioSource audioSource;
-
-    
-    private void Start()
-    {
-        if (audioSource == null)
-        {
-            audioSource = GetComponent<AudioSource>();
-        }
-    }
+    // Impede múltiplas coletas simultâneas
+    private bool _collected;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (_collected)
+            return;
+
         if (!other.CompareTag("Player"))
             return;
 
+        _collected = true;
+
+        if (_pickupSound != null)
+        {
+            AudioSource.PlayClipAtPoint(_pickupSound, transform.position);
+        }
+
         
-
-        if (audioSource != null)
-        {
-            
-            audioSource.PlayOneShot(pickupSound);
-            Destroy(gameObject, pickupSound.length);
-        }
-        else
-        {
-            
-            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
-
-    
 }
 
 

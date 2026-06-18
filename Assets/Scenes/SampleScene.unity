@@ -248,8 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &14029503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -698,8 +697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 8300000, guid: 6da92f755458d884b903fdd34c350fe6, type: 3}
-  audioSource: {fileID: 226282588}
+  _pickupSound: {fileID: 0}
 --- !u!61 &226282587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1117,8 +1115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 8300000, guid: b2c23d2146181b74680891b70588c20d, type: 3}
 --- !u!61 &264688960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1581,8 +1578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 8300000, guid: 6da92f755458d884b903fdd34c350fe6, type: 3}
-  audioSource: {fileID: 399126811}
+  _pickupSound: {fileID: 0}
 --- !u!61 &399126813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2061,8 +2057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &477903602
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2311,8 +2306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &509438352
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3575,8 +3569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 8300000, guid: 6da92f755458d884b903fdd34c350fe6, type: 3}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &948892269
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4312,8 +4305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1110576754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4480,8 +4472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 8300000, guid: 6da92f755458d884b903fdd34c350fe6, type: 3}
-  audioSource: {fileID: 1134574038}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1134574034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4964,8 +4955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 8300000, guid: 6da92f755458d884b903fdd34c350fe6, type: 3}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1179824480
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5542,8 +5532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1239586913
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5792,8 +5781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1298852686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6164,8 +6152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1324287022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6550,6 +6537,7 @@ MonoBehaviour:
   _horizonta: 0
   _vertica: 0
   playerAnim: {fileID: 1411985438}
+  _ComerBoca: {fileID: 4537268018807456327, guid: 6e7b3698b95d393489d4b9a8292655fb, type: 3}
 --- !u!70 &1411985444
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6971,8 +6959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1478002132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7767,8 +7754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1611728482
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7883,6 +7869,54 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.87, y: -2.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1613467717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613467719}
+  - component: {fileID: 1613467718}
+  m_Layer: 0
+  m_Name: Summom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1613467718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613467717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
+  _trash: {fileID: 0}
+  _trash2: {fileID: 0}
+  _trash3: {fileID: 0}
+  _summonTime: 0
+--- !u!4 &1613467719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613467717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8424,8 +8458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1690549600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9498,8 +9531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1890204643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9766,8 +9798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &1989588970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10272,8 +10303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89ac0fe8c24ee8419adb6ffda83a1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coletar
-  pickupSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  _pickupSound: {fileID: 0}
 --- !u!61 &2078556950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10802,3 +10832,4 @@ SceneRoots:
   - {fileID: 1690549603}
   - {fileID: 1611728485}
   - {fileID: 1239586916}
+  - {fileID: 1613467719}

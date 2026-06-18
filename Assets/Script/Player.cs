@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
 
     public static float scal = 1f;
 
+    [SerializeField]
+    private GameObject _ComerBoca;
+
 
     void Start()
     {
@@ -75,5 +78,6 @@ public class Player : MonoBehaviour
     {
         itensPegos += 1;
         Destroy(collision2D.gameObject);
+        Instantiate(_ComerBoca, transform.position, Quaternion.identity);
     }
 }
