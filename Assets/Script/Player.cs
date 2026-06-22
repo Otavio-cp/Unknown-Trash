@@ -3,7 +3,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Events;
-using Mono.Cecil;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
@@ -33,7 +32,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        Application.targetFrameRate = 30;
+        Application.targetFrameRate = 60;
         Screen.fullScreen = true;
     }
     
@@ -44,7 +43,7 @@ public class Player : MonoBehaviour
         _horizonta = Input.GetAxis("Horizontal");
         _vertica = Input.GetAxis("Vertical");
 
-        _rb.linearVelocity = new Vector2(_horizonta, _vertica) * vel;
+        _rb.linearVelocity = new Vector2(_horizonta, _vertica).normalized * vel;
 
 
         if (_horizonta!=0f)
