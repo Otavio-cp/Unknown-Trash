@@ -2,22 +2,23 @@ using UnityEngine;
 
 public class Summomtrash : MonoBehaviour
 {
-    [SerializeField] private GameObject _trash;
+    [SerializeField] private GameObject SpawnPrefab;
+    [SerializeField] private float spawnFrequency = 2f;
+    private float _timer;
+    [SerializeField] private Transform Up;
+    [SerializeField] private Transform Down;
+    [SerializeField] private Transform Left;
+    [SerializeField] private Transform Right;
 
-    [Min(2.5f)][SerializeField] private float _summonTime;
-    [SerializeField] private float _summonTimeReset = 0;
-
-
-    public void Spawn()
+    private void Update()
     {
-        _summonTime -= Time.deltaTime;
-
-        Vector2 posicao = new Vector2(Random.Range(-87, 87), Random.Range(-53, 53));
-
-        if (_summonTime >= _summonTimeReset)
+        _timer += Time.deltaTime;
+        if (_timer >= spawnFrequency)
         {
-            Instantiate(_trash, posicao, Quaternion.identity);
-            _summonTime = 1;
+            Vector2 RandomPosition = new Vector2(Random.Range(-83, 83f), Random.Range(-53, 53));
+            Instantiate(SpawnPrefab, RandomPosition, Quaternion.identity);
+            _timer = 0f;
         }
+
     }
 }
