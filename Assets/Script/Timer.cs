@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public static float timer = 20;
+    public static float timer = 60;
 
     [SerializeField] private Color _color1 = Color.white;
     [SerializeField] private Color _color2 = Color.red;

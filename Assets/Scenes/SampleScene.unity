@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 18598726}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -163,9 +163,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 1280574069541927085, guid: 0b2f44a008e8eea4292464584ab85707, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 1280574069541927085, guid: 0b2f44a008e8eea4292464584ab85707, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &29801961
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +195,7 @@ Transform:
   m_GameObject: {fileID: 29801961}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -210,9 +213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 4238418948979528129, guid: a18aae427192b6c4cbd82e9f7df7b854, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 4238418948979528129, guid: a18aae427192b6c4cbd82e9f7df7b854, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1001 &64368655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -435,7 +441,7 @@ Transform:
   m_GameObject: {fileID: 187023235}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -453,9 +459,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 2823596804834102732, guid: 808fe7604ef13804cbd2f801abd2b0f4, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 2823596804834102732, guid: 808fe7604ef13804cbd2f801abd2b0f4, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &195990135
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +607,7 @@ Transform:
   m_GameObject: {fileID: 255839680}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -616,9 +625,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 5610536482920551616, guid: 129bd4428a69a2f4a91ee0d81e7174d3, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 5610536482920551616, guid: 129bd4428a69a2f4a91ee0d81e7174d3, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1001 &259041898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -717,7 +729,7 @@ Transform:
   m_GameObject: {fileID: 283294835}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -735,9 +747,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 7632592034626114246, guid: 010a95e54fb93c14fbf173b05f50cda0, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 7632592034626114246, guid: 010a95e54fb93c14fbf173b05f50cda0, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1001 &329511210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1243,7 +1258,7 @@ Transform:
   m_GameObject: {fileID: 488547661}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1261,9 +1276,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 1147770164527597894, guid: ac1b3bbb0e6a6214d9f8ae6912d3ccbe, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 1147770164527597894, guid: ac1b3bbb0e6a6214d9f8ae6912d3ccbe, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &511573418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,7 +1783,7 @@ Transform:
   m_GameObject: {fileID: 708852036}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1783,9 +1801,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 7631537796798979416, guid: 81832078b0cf4e044800ef491022ba18, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 7631537796798979416, guid: 81832078b0cf4e044800ef491022ba18, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &760511307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,7 +2468,7 @@ Transform:
   m_GameObject: {fileID: 918499527}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2465,9 +2486,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 4696479646258216993, guid: 71621fe94cedee044bc9fe306cc5df23, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 4696479646258216993, guid: 71621fe94cedee044bc9fe306cc5df23, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &929957418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,7 +2518,7 @@ Transform:
   m_GameObject: {fileID: 929957418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2512,9 +2536,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 3239090543265752661, guid: 880414210f6c1a74d85adee83513e614, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 3239090543265752661, guid: 880414210f6c1a74d85adee83513e614, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &935882178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,7 +2568,7 @@ Transform:
   m_GameObject: {fileID: 935882178}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2559,9 +2586,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 6710334820000253448, guid: 58a1af291b2d3dd48854d62df08687f5, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 6710334820000253448, guid: 58a1af291b2d3dd48854d62df08687f5, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &985538618
 GameObject:
   m_ObjectHideFlags: 0
@@ -3580,7 +3610,7 @@ Transform:
   m_GameObject: {fileID: 1359045636}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3598,9 +3628,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 3413133631571710966, guid: 56c35caae0aca9448a5106d91afd6f4a, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 3413133631571710966, guid: 56c35caae0aca9448a5106d91afd6f4a, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &1375859934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3815,7 +3848,7 @@ Transform:
   m_GameObject: {fileID: 1411985437}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 5.68828, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4185,7 +4218,7 @@ Transform:
   m_GameObject: {fileID: 1518776210}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4203,9 +4236,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 2831744985937050849, guid: fdec9577e81eb0d42a0d86d4d1d776da, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 2831744985937050849, guid: fdec9577e81eb0d42a0d86d4d1d776da, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &1524245741
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,7 +4557,7 @@ Transform:
   m_GameObject: {fileID: 1533062693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4539,9 +4575,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 4630129027519803608, guid: f9cc31d060083cf47a142e1d48223ff9, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 4630129027519803608, guid: f9cc31d060083cf47a142e1d48223ff9, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &1576933099
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,9 +4866,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 9085093155886643273, guid: 6dfa358f726596b4781379d0d9389792, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 9085093155886643273, guid: 6dfa358f726596b4781379d0d9389792, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!4 &1613467719
 Transform:
   m_ObjectHideFlags: 0
@@ -4839,7 +4881,7 @@ Transform:
   m_GameObject: {fileID: 1613467717}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5564,7 +5606,7 @@ Transform:
   m_GameObject: {fileID: 1760602746}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5582,9 +5624,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 1129882487502562095, guid: f9852b5caaee7d84ebd35dd959413e6d, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 1129882487502562095, guid: f9852b5caaee7d84ebd35dd959413e6d, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &1775607026
 GameObject:
   m_ObjectHideFlags: 0
@@ -5658,7 +5703,7 @@ Transform:
   m_GameObject: {fileID: 1775607026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 5.68828, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5690,7 +5735,7 @@ Transform:
   m_GameObject: {fileID: 1782509999}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5708,9 +5753,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 2908699304477929097, guid: c9443d073fd864e4a82439046fce4351, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 2908699304477929097, guid: c9443d073fd864e4a82439046fce4351, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1001 &1796218592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6076,7 +6124,7 @@ Transform:
   m_GameObject: {fileID: 1832960471}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6094,9 +6142,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 1510908429574181004, guid: 4fc560ff7de8e464194989e40b677e03, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 1510908429574181004, guid: 4fc560ff7de8e464194989e40b677e03, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!4 &1864949316
 Transform:
   m_ObjectHideFlags: 0
@@ -6379,7 +6430,7 @@ Transform:
   m_GameObject: {fileID: 2017352436}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6397,9 +6448,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 1518276503320026067, guid: c8c3adf6a0f6ded4996c9d057603c15a, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 1518276503320026067, guid: c8c3adf6a0f6ded4996c9d057603c15a, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1 &2054440015
 GameObject:
   m_ObjectHideFlags: 0
@@ -6886,7 +6940,7 @@ Transform:
   m_GameObject: {fileID: 2146925506}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.72895, y: 9.47172, z: 0}
+  m_LocalPosition: {x: -6.72895, y: 15.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6904,9 +6958,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3a744c67aa1c48a8aae955a4f4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Summomtrash
-  _trash: {fileID: 7941056140942726795, guid: 7332fb38319b3b24180794030d102593, type: 3}
-  _summonTime: 2.5
-  _summonTimeSpawn: 0
+  SpawnPrefab: {fileID: 7941056140942726795, guid: 7332fb38319b3b24180794030d102593, type: 3}
+  spawnFrequency: 2
+  Up: {fileID: 0}
+  Down: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
 --- !u!1001 &8352470650688764945
 PrefabInstance:
   m_ObjectHideFlags: 0
