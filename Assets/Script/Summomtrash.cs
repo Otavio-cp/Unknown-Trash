@@ -9,6 +9,7 @@ public class Summomtrash : MonoBehaviour
     [SerializeField] private Transform Down;
     [SerializeField] private Transform Left;
     [SerializeField] private Transform Right;
+    [SerializeField] private ParticleSystem particleSystemSpawn;
 
     private void Update()
     {
@@ -17,6 +18,7 @@ public class Summomtrash : MonoBehaviour
         {
             Vector2 RandomPosition = new Vector2(Random.Range(-83, 83f), Random.Range(-53, 53));
             Instantiate(SpawnPrefab, RandomPosition, Quaternion.identity);
+            Instantiate(particleSystemSpawn, RandomPosition, Quaternion.identity);
             _timer = 0f;
         }
 

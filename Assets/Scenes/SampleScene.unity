@@ -169,6 +169,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &29801961
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +220,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1001 &64368655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -465,6 +467,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &195990135
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +634,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1001 &259041898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -753,6 +757,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1001 &329511210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1282,6 +1287,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &511573418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,6 +1813,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &760511307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,6 +2499,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &929957418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,6 +2550,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &935882178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,6 +2601,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &985538618
 GameObject:
   m_ObjectHideFlags: 0
@@ -3634,6 +3644,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &1375859934
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,6 +4253,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &1524245741
 GameObject:
   m_ObjectHideFlags: 0
@@ -4483,7 +4495,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4581,6 +4593,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &1576933099
 GameObject:
   m_ObjectHideFlags: 0
@@ -4872,6 +4885,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!4 &1613467719
 Transform:
   m_ObjectHideFlags: 0
@@ -5630,6 +5644,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &1775607026
 GameObject:
   m_ObjectHideFlags: 0
@@ -5759,6 +5774,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1001 &1796218592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6148,6 +6164,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!4 &1864949316
 Transform:
   m_ObjectHideFlags: 0
@@ -6454,6 +6471,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1 &2054440015
 GameObject:
   m_ObjectHideFlags: 0
@@ -6964,6 +6982,7 @@ MonoBehaviour:
   Down: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
+  particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
 --- !u!1001 &8352470650688764945
 PrefabInstance:
   m_ObjectHideFlags: 0
