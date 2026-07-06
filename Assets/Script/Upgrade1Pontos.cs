@@ -10,7 +10,7 @@ public class Upgrade1Pontos : MonoBehaviour
     [SerializeField]
     float aumentoDePreço = 2f;
 
-    private TMP_Text preço;
+    public TMP_Text preço;
 
     
     private void Start()
