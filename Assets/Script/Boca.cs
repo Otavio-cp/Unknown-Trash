@@ -5,6 +5,7 @@ public class Boca : MonoBehaviour
     [SerializeField] private float _tempoDeDESTRUIR = 0.11f;
     [SerializeField] private AudioClip _ComerAudio;
     [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private ParticleSystem _particleSystem;
 
 
     private void Start()

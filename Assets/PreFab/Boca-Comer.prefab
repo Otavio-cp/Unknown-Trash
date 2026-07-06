@@ -130,6 +130,7 @@ MonoBehaviour:
   _tempoDeDESTRUIR: 0.6
   _ComerAudio: {fileID: 8300000, guid: 300463b7571217c42b416a35176b702a, type: 3}
   _audioSource: {fileID: 8193280070180480880}
+  _particleSystem: {fileID: 5722944048417470462, guid: 426b766ac1248a4419b25dbb70a694fb, type: 3}
 --- !u!82 &8193280070180480880
 AudioSource:
   m_ObjectHideFlags: 0

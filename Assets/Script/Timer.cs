@@ -15,6 +15,8 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private Animator _TimerAni;
 
+    [SerializeField] GameObject _telatempoesgotado;
+
     public static TMP_Text _timer;
     void Start()
     {
@@ -37,6 +39,10 @@ public class Timer : MonoBehaviour
         else
         {
             _TimerAni.SetBool("isAniTime", false);
+        }
+        if (timer <= 0f)
+        {
+            _telatempoesgotado.SetActive(true);
         }
     }
 }

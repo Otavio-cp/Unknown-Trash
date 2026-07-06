@@ -871,6 +871,7 @@ Transform:
   - {fileID: 255839681}
   - {fileID: 1359045637}
   - {fileID: 1832960472}
+  - {fileID: 1963689942}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &378179121
@@ -1354,8 +1355,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2275,6 +2276,7 @@ MonoBehaviour:
   _duration: 1
   texto: {fileID: 845461960}
   _TimerAni: {fileID: 845461963}
+  _telatempoesgotado: {fileID: 1375859934}
 --- !u!95 &845461963
 Animator:
   serializedVersion: 7
@@ -2334,7 +2336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 712, y: -418}
+  m_AnchoredPosition: {x: 400, y: -350}
   m_SizeDelta: {x: 291.79, y: 73.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &859268002
@@ -2424,7 +2426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3773585, g: 0.3506586, b: 0.3506586, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3382,14 +3384,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18867922, g: 0.070309706, b: 0.070309706, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 693612329889380861, guid: c4eae37443f9c2a4196573e6b0f31b34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3663,7 +3665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1375859935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4014,8 +4016,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5467,7 +5469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -418}
+  m_AnchoredPosition: {x: -400, y: -350}
   m_SizeDelta: {x: 291.79, y: 73.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1709108549
@@ -5539,7 +5541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3679245, g: 0.30371127, b: 0.30371127, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6284,6 +6286,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1963689941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963689942}
+  - component: {fileID: 1963689943}
+  m_Layer: 0
+  m_Name: SummomStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963689942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963689941}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 334414146}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963689943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963689941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7afc0a639033e46a7c08d31a8c9aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SummomStart
+  _lixo1: {fileID: 9085093155886643273, guid: 6dfa358f726596b4781379d0d9389792, type: 3}
+  _lixo2: {fileID: 4238418948979528129, guid: a18aae427192b6c4cbd82e9f7df7b854, type: 3}
+  _lixo3: {fileID: 2823596804834102732, guid: 808fe7604ef13804cbd2f801abd2b0f4, type: 3}
+  _lixo4: {fileID: 7941056140942726795, guid: 7332fb38319b3b24180794030d102593, type: 3}
+  _lixo5: {fileID: 7632592034626114246, guid: 010a95e54fb93c14fbf173b05f50cda0, type: 3}
+  _lixo6: {fileID: 1518276503320026067, guid: c8c3adf6a0f6ded4996c9d057603c15a, type: 3}
+  _lixo7: {fileID: 6710334820000253448, guid: 58a1af291b2d3dd48854d62df08687f5, type: 3}
+  _lixo8: {fileID: 2831744985937050849, guid: fdec9577e81eb0d42a0d86d4d1d776da, type: 3}
+  _lixo9: {fileID: 1147770164527597894, guid: ac1b3bbb0e6a6214d9f8ae6912d3ccbe, type: 3}
+  _lixo10: {fileID: 4696479646258216993, guid: 71621fe94cedee044bc9fe306cc5df23, type: 3}
+  _lixo11: {fileID: 1129882487502562095, guid: f9852b5caaee7d84ebd35dd959413e6d, type: 3}
+  _lixo12: {fileID: 3239090543265752661, guid: 880414210f6c1a74d85adee83513e614, type: 3}
+  _lixo13: {fileID: 7631537796798979416, guid: 81832078b0cf4e044800ef491022ba18, type: 3}
 --- !u!1 &1963732859
 GameObject:
   m_ObjectHideFlags: 0
