@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
 
         if (itensPegos >= 3)
         {
-            scal += 0.1f;
+            scal += 0.3f;
             transform.localScale = new Vector3(scal, scal, scal);
         }
     }

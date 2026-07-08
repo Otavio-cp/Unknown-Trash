@@ -6,9 +6,9 @@ public class Upgrade1Pontos : MonoBehaviour
     [SerializeField]
     float valorUpgrade = 10;
     [SerializeField]
-    int aumentodeTamanho = 2;
+    float aumentodeTamanho = 1f;
     [SerializeField]
-    float aumentoDePreço = 2f;
+    float aumentoDePreço = 2.0f;
 
     public TMP_Text preço;
 
@@ -16,13 +16,17 @@ public class Upgrade1Pontos : MonoBehaviour
     private void Start()
     {
         preço = GetComponentInChildren<TMP_Text>();
-        preço.text = $"Upgrade Tamanho: {valorUpgrade}";
+    }
+    void Update()
+    {
+        preço.text = $"Score value: {valorUpgrade}";
     }
 
     public void OnUpdate1()
     {
-        if (Player.itensPegos <= valorUpgrade)
+        if (Player.itensPegos >= valorUpgrade)
         {
+            Player.itensPegos -= (int)valorUpgrade;
             Player.scal += aumentodeTamanho;
             valorUpgrade *= aumentoDePreço;
         }
