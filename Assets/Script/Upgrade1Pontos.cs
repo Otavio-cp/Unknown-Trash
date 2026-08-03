@@ -15,7 +15,7 @@ public class Upgrade1Pontos : MonoBehaviour
     
     private void Start()
     {
-        preço = GetComponentInChildren<TMP_Text>();
+        preço = GetComponent<TMP_Text>();
     }
     void Update()
     {
@@ -31,4 +31,5 @@ public class Upgrade1Pontos : MonoBehaviour
             valorUpgrade *= aumentoDePreço;
         }
     }
+
 }

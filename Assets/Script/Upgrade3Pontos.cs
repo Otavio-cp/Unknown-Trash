@@ -21,8 +21,9 @@ public class Upgrade3Pontos : MonoBehaviour
     {
         if(Player.itensPegos >= valorUpgrade)
         {
-            valorUpgrade *= valorMutiplicador;
+            
             Player.itensPegos -= valorUpgrade;
+            valorUpgrade *= valorMutiplicador;
             Player.itensPegos += colletedItensUpgrade;
         }
     }
