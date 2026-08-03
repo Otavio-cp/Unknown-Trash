@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayQuit : MonoBehaviour
 {
+    int Update2;
     public void Jogar()
     {
         SceneManager.LoadScene("SampleScene");
