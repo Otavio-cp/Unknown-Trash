@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class PlayQuit : MonoBehaviour
 {
     bool isHistori = false;
+    int Update2;
+
     public void Jogar()
     {
         if (isHistori == false)
         {
-            SceneManager.LoadScene("História");
+            SceneManager.LoadScene("Histï¿½ria");
             isHistori = true;
         }
         else
