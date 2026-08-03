@@ -4,9 +4,8 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class Upgrade2Pontos : MonoBehaviour
 {
-    int valorUpgrade = 20;
+    static int valorUpgrade = 20;
     public static float timerQNT = 0;
-    public static float timer = 0;
 
     [SerializeField] int multiplicador = 2;
 
@@ -26,7 +25,6 @@ public class Upgrade2Pontos : MonoBehaviour
             Player.itensPegos -= valorUpgrade;
             valorUpgrade *= multiplicador;
             timerQNT += 10f;
-            timer += 10f;
             preço.text = $"Score value: {valorUpgrade}";
         }
     }

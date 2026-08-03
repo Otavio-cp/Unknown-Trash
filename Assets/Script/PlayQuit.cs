@@ -5,15 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayQuit : MonoBehaviour
 {
-    bool isHistori = false;
-    int Update2;
+    public static bool isHistori = false;
 
     public void Jogar()
     {
         if (isHistori == false)
         {
-            SceneManager.LoadScene("Hist�ria");
-            isHistori = true;
+            SceneManager.LoadScene("intro");
         }
         else
         {
@@ -24,10 +22,8 @@ public class PlayQuit : MonoBehaviour
     public void Jogar2()
     {
         SceneManager.LoadScene("SampleScene");
-        // apply saved timer bonus
+
         Timer.timer = 60 + Upgrade2Pontos.timerQNT;
-        // ensure no accidental use of =+ operator
-        Upgrade2Pontos.timerQNT = Upgrade2Pontos.timer;
     }
     public void Quitar()
     {

@@ -4,24 +4,13 @@ using UnityEngine;
 public class Upgrade1Pontos : MonoBehaviour
 {
     [SerializeField]
-    float valorUpgrade = 10;
+    static float valorUpgrade = 10;
     [SerializeField]
-    float aumentodeTamanho = 1f;
+    static float aumentodeTamanho = 1f;
     [SerializeField]
-    float aumentoDePreço = 2.0f;
+    static float aumentoDePreço = 2.0f;
 
-    public TMP_Text preço;
-
-    
-    private void Start()
-    {
-        preço = GetComponent<TMP_Text>();
-    }
-    void Update()
-    {
-        preço.text = $"Score value: {valorUpgrade}";
-    }
-
+    [SerializeField] TMP_Text preço;
     public void OnUpdate1()
     {
         if (Player.itensPegos >= valorUpgrade)
@@ -29,6 +18,7 @@ public class Upgrade1Pontos : MonoBehaviour
             Player.itensPegos -= (int)valorUpgrade;
             Player.scal += aumentodeTamanho;
             valorUpgrade *= aumentoDePreço;
+            preço.text = $"Score value: {valorUpgrade}";
         }
     }
 
