@@ -3,15 +3,15 @@ using UnityEngine;
 
 public class Upgrade3Pontos : MonoBehaviour
 {
-    [SerializeField]static int valorUpgrade = 30;
-    [SerializeField]static int colletedItensUpgrade = 1;
+    [SerializeField]static int valorUpgrade = 40;
+    [SerializeField]static int aumentodeitens = 1;
     
     [SerializeField]static int valorMutiplicador = 2;
 
     [SerializeField]TMP_Text preço;
-    void Start()
+    private void Update()
     {
-        preço = GetComponentInChildren<TMP_Text>();
+        preço.text = $"Score value: {valorUpgrade}";
     }
     public void Upgrade2()
     {
@@ -19,8 +19,7 @@ public class Upgrade3Pontos : MonoBehaviour
         {
             Player.itensPegos -= valorUpgrade;
             valorUpgrade *= valorMutiplicador;
-            Player.itensPegos += colletedItensUpgrade;
-            preço.text = $"Score value: {valorUpgrade}";
+            Player.intensganho += aumentodeitens;
         }
     }
 }

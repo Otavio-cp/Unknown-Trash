@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
 
     public static int itensPegos = 0;
 
+    public static int intensganho = 1;
+
+    public static int aumentodetamanho = 1;
+
 
     public Animator playerAnim;
 
@@ -69,14 +73,25 @@ public class Player : MonoBehaviour
 
         if (itensPegos >= 3)
         {
-            scal += 0.3f;
+            scal += aumentodetamanho;
             transform.localScale = new Vector3(scal, scal, scal);
         }
+
+        if (scal <= 100)
+        {
+            SceneManager.LoadScene("Vitoria");
+        }
+
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
-        itensPegos += 1;
         Destroy(collision2D.gameObject);
+        aumentodoscore();
         Instantiate(_ComerBoca, transform.position, Quaternion.identity);
+    }
+
+    void aumentodoscore()
+    {
+        itensPegos += intensganho;
     }
 }

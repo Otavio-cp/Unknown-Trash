@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class Upgrade2Pontos : MonoBehaviour
@@ -10,13 +11,9 @@ public class Upgrade2Pontos : MonoBehaviour
     [SerializeField] int multiplicador = 2;
 
     [SerializeField] TMP_Text preço;
-
-    private void Start()
+    private void Update()
     {
-        if (preço == null)
-            preço = GetComponentInChildren<TMP_Text>();
-        if (preço != null)
-            preço.text = $"Score value: {valorUpgrade}";
+        preço.text = $"Score value: {valorUpgrade}";
     }
     public void Update2()
     {
@@ -25,7 +22,6 @@ public class Upgrade2Pontos : MonoBehaviour
             Player.itensPegos -= valorUpgrade;
             valorUpgrade *= multiplicador;
             timerQNT += 10f;
-            preço.text = $"Score value: {valorUpgrade}";
         }
     }
 }

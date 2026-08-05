@@ -23,7 +23,7 @@ public class PlayQuit : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
 
-        Timer.timer = 60 + Upgrade2Pontos.timerQNT;
+        Timer.timer = 45 + Upgrade2Pontos.timerQNT;
     }
     public void Quitar()
     {
