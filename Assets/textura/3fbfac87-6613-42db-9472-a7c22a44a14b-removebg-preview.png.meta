@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1f5105accc969a54099fde1f1266f915
+guid: d110d13164d7ff449b55baf816dffc75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2845277386790798381
-    second: tela de vitoria_0
+      213: -6486570190495710244
+    second: 3fbfac87-6613-42db-9472-a7c22a44a14b-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tela de vitoria_0
+      name: 3fbfac87-6613-42db-9472-a7c22a44a14b-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1672
-        height: 941
+        x: 15
+        y: 153
+        width: 581
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3dbf1e8aa4b8388d0800000000000000
-      internalID: -2845277386790798381
+      spriteID: cd38dd077c21bf5a0800000000000000
+      internalID: -6486570190495710244
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tela de vitoria_0: -2845277386790798381
+      3fbfac87-6613-42db-9472-a7c22a44a14b-removebg-preview_0: -6486570190495710244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
