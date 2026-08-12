@@ -29,4 +29,8 @@ public class PlayQuit : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Creditos");
+    }
 }

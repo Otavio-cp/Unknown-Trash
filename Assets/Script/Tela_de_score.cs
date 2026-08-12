@@ -8,6 +8,7 @@ public class Tela_de_score : MonoBehaviour
     public UnityEvent onTelaUpgrade;
     public void OnIrParaATelaDeUpgrade()
     {
+        Player.Natelaupgrades = false;
         SceneManager.LoadScene("Upgrade");
     }
 }

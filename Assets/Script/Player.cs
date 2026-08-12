@@ -1,5 +1,6 @@
 
 
+
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Events;
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject _ComerBoca;
 
+    public static bool Natelaupgrades = false;
 
     void Start()
     {
@@ -44,44 +46,34 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        _horizonta = Input.GetAxis("Horizontal");
-        _vertica = Input.GetAxis("Vertical");
-
-        _rb.linearVelocity = new Vector2(_horizonta, _vertica).normalized * vel;
-
-
-        if (_horizonta!=0f)
+        if (Natelaupgrades == false)
         {
-            playerAnim.SetBool("isWalkX", true);
+            _horizonta = Input.GetAxis("Horizontal");
+            _vertica = Input.GetAxis("Vertical");
+
+            _rb.linearVelocity = new Vector2(_horizonta, _vertica).normalized * vel;
+
+
+            if (_horizonta != 0f)
+            {
+                playerAnim.SetBool("isWalkX", true);
+            }
+            else
+            {
+                playerAnim.SetBool("isWalkX", false);
+            }
+
+
+            if (_vertica != 0f)
+            {
+                playerAnim.SetBool("isWalkY", true);
+
+            }
+            else
+            {
+                playerAnim.SetBool("isWalkY", false);
+            }
         }
-        else
-        {
-            playerAnim.SetBool("isWalkX", false);
-        }
-
-
-        if (_vertica!=0f)
-        {
-            playerAnim.SetBool("isWalkY", true);
-
-        }
-        else
-        {
-            playerAnim.SetBool("isWalkY", false);
-        }
-
-
-        if (itensPegos >= 3)
-        {
-            scal += aumentodetamanho;
-            transform.localScale = new Vector3(scal, scal, scal);
-        }
-
-        if (scal <= 100)
-        {
-            SceneManager.LoadScene("Vitoria");
-        }
-
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
@@ -92,6 +84,21 @@ public class Player : MonoBehaviour
 
     void aumentodoscore()
     {
-        itensPegos += intensganho;
+        if (Natelaupgrades == false)
+        {
+            itensPegos += intensganho;
+
+            if (itensPegos >= 3)
+            {
+                scal += aumentodetamanho;
+                transform.localScale = new Vector3(scal, scal, scal);
+            }
+
+            if (scal <= 100)
+            {
+                SceneManager.LoadScene("Vitoria");
+            }
+        }
+        
     }
 }
