@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class UpgradeTHEEND : MonoBehaviour
 {
-    static int preço = 4500;
+    static int preço = 500;
     [SerializeField] TMP_Text _preço;
 
     private void Awake()

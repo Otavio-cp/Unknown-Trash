@@ -22,9 +22,13 @@ public class Player : MonoBehaviour
 
     public static int itensPegos = 0;
 
+    public static int itensParaAumentar;
+
+    public static int itensNecessarios = 3;
+
     public static int intensganho = 1;
 
-    public static float aumentodetamanho = 1f;
+    public static float aumentodetamanho = 0.1f;
 
 
     public Animator playerAnim;
@@ -88,11 +92,17 @@ public class Player : MonoBehaviour
         if (Natelaupgrades == false)
         {
             itensPegos += intensganho;
+            itensParaAumentar += intensganho;
 
-            if (itensPegos >= 3)
+            if (itensParaAumentar >= itensNecessarios)
             {
                 scal += aumentodetamanho;
                 transform.localScale = new Vector3(scal, scal, scal);
+                itensParaAumentar = 0;
+            }
+            if (scal >= 25f)
+            {
+                SceneManager.LoadScene("Vitoria");
             }
         }
         

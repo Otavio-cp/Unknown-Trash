@@ -8,6 +8,16 @@ public class Coletar : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    private void Start()
+    {
+        Mudar();
+    }
+
+    public void Mudar()
+    {
+        float randomRotate = Random.Range(0f, 360f);
+        transform.rotation = Quaternion.Euler(0f, 0f, randomRotate);
+    }
 }
 
 

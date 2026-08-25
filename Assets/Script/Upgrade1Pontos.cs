@@ -6,7 +6,7 @@ public class Upgrade1Pontos : MonoBehaviour
     [SerializeField]
     static int valorUpgrade = 10;
     [SerializeField]
-    static float aumentodeTamanho2 = 0.1f;
+    static float aumentodeTamanho2 = 0.05f;
     [SerializeField]
     static int aumentoDePreço = 2;
 

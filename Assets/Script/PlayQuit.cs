@@ -24,6 +24,8 @@ public class PlayQuit : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
 
         Timer.timer = 45 + Upgrade2Pontos.timerQNT;
+
+        Player.Natelaupgrades = false;
     }
     public void Quitar()
     {
