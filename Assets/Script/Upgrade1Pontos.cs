@@ -6,13 +6,13 @@ public class Upgrade1Pontos : MonoBehaviour
     [SerializeField]
     static int valorUpgrade = 10;
     [SerializeField]
-    static int aumentodeTamanho2 = 1;
+    static float aumentodeTamanho2 = 0.1f;
     [SerializeField]
     static int aumentoDePreço = 2;
 
     [SerializeField] TMP_Text preço;
 
-    private void Update()
+    private void Awake()
     {
         preço.text = $"Score value: {valorUpgrade}";
     }
@@ -24,6 +24,7 @@ public class Upgrade1Pontos : MonoBehaviour
             Player.itensPegos -= valorUpgrade;
             Player.aumentodetamanho += aumentodeTamanho2;
             valorUpgrade *= aumentoDePreço;
+            preço.text = $"Score value: {valorUpgrade}";
         }
     }
 

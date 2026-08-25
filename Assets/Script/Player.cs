@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
 
     public static int intensganho = 1;
 
-    public static int aumentodetamanho = 1;
+    public static float aumentodetamanho = 1f;
 
 
     public Animator playerAnim;
@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        scal = transform.localScale.x;
         Application.targetFrameRate = 60;
         Screen.fullScreen = true;
     }
@@ -92,11 +93,6 @@ public class Player : MonoBehaviour
             {
                 scal += aumentodetamanho;
                 transform.localScale = new Vector3(scal, scal, scal);
-            }
-
-            if (scal <= 100)
-            {
-                SceneManager.LoadScene("Vitoria");
             }
         }
         
