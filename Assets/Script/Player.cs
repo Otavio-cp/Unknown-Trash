@@ -102,13 +102,25 @@ public class Player : MonoBehaviour
                 transform.localScale = new Vector3(scal, scal, scal);
                 itensParaAumentar = 0;
             }
-            if (scal >= 25f)
+            if (transform.localScale.x >= 20f)
             {
                 SceneManager.LoadScene("Vitoria");
             }
             if (transform.localScale.x >= 6f)
             {
                 Camera1.aumentarCamera = true;
+            }
+            else
+            {
+                Camera1.aumentarCamera = false;
+            }
+            if (transform.localScale.x >= 12f)
+            {
+                Camera1.aumentarCamera2 = true;
+            }
+            else
+            {
+                Camera1.aumentarCamera = false;
             }
         }
         
