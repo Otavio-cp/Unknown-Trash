@@ -38,6 +38,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject _ComerBoca;
 
+    private Camera1 _camera;
+
     public static bool Natelaupgrades = false;
 
     void Start()
@@ -103,6 +105,10 @@ public class Player : MonoBehaviour
             if (scal >= 25f)
             {
                 SceneManager.LoadScene("Vitoria");
+            }
+            if (transform.localScale.x >= 6f)
+            {
+                Camera1.aumentarCamera = true;
             }
         }
         

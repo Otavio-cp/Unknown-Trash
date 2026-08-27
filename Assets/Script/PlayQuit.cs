@@ -21,11 +21,14 @@ public class PlayQuit : MonoBehaviour
     }
     public void Jogar2()
     {
-        SceneManager.LoadScene("SampleScene");
-
         Timer.timer = 45 + Upgrade2Pontos.timerQNT;
 
         Player.Natelaupgrades = false;
+        Camera1.aumentarCamera = false;
+
+        SceneManager.LoadScene("SampleScene");
+
+        Timer.timer = 45 + Upgrade2Pontos.timerQNT;
     }
     public void Quitar()
     {
