@@ -24,7 +24,6 @@ public class PlayQuit : MonoBehaviour
         Timer.timer = 45 + Upgrade2Pontos.timerQNT;
 
         Player.Natelaupgrades = false;
-        Camera1.aumentarCamera = false;
 
         SceneManager.LoadScene("SampleScene");
 

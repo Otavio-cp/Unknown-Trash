@@ -14,37 +14,35 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private Rigidbody2D _rb;
-
-    [SerializeField]
+    
     private float _horizonta = 0f;
-    [SerializeField]
+    
     private float _vertica = 0f;
-
+    [Header("Player")]
     public static int itensPegos = 0;
-
     public static int itensParaAumentar;
-
     public static int itensNecessarios = 3;
-
     public static int intensganho = 1;
-
     public static float aumentodetamanho = 0.1f;
-
-
     public Animator playerAnim;
-
-    public static float scal = 1f;
+    public float scal = 6f;
 
     [SerializeField]
     private GameObject _ComerBoca;
+    [Header("Camera")]
+    [SerializeField] Camera _1camera;
+    [SerializeField] float tempo;
+    [SerializeField] float tamanhoAumentar = 12f;
+    [SerializeField] float tamanhoAumentar2 = 25f;
+    [SerializeField] float tamanhoDimi = 6f;
+    [SerializeField] float duracao = 2f;
 
-    private Camera1 _camera;
+    
 
     public static bool Natelaupgrades = false;
 
     void Start()
     {
-        scal = transform.localScale.x;
         Application.targetFrameRate = 60;
         Screen.fullScreen = true;
     }
@@ -96,31 +94,35 @@ public class Player : MonoBehaviour
             itensPegos += intensganho;
             itensParaAumentar += intensganho;
 
+
             if (itensParaAumentar >= itensNecessarios)
             {
                 scal += aumentodetamanho;
                 transform.localScale = new Vector3(scal, scal, scal);
                 itensParaAumentar = 0;
             }
-            if (transform.localScale.x >= 20f)
+
+            if (transform.localScale.x >= 25f)
             {
                 SceneManager.LoadScene("Vitoria");
             }
+
             if (transform.localScale.x >= 6f)
             {
-                Camera1.aumentarCamera = true;
+                _1camera.orthographicSize = tamanhoAumentar;
             }
             else
             {
-                Camera1.aumentarCamera = false;
+                _1camera.orthographicSize = tamanhoDimi;
             }
+
             if (transform.localScale.x >= 12f)
             {
-                Camera1.aumentarCamera2 = true;
+                _1camera.orthographicSize = tamanhoAumentar2;
             }
-            else
+            else if (transform.localScale.x <= 12f && transform.localScale.x >= 6f)
             {
-                Camera1.aumentarCamera = false;
+                _1camera.orthographicSize = tamanhoAumentar;
             }
         }
         
