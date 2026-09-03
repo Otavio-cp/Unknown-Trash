@@ -31,11 +31,9 @@ public class Player : MonoBehaviour
     private GameObject _ComerBoca;
     [Header("Camera")]
     [SerializeField] Camera _1camera;
-    [SerializeField] float tempo;
     [SerializeField] float tamanhoAumentar = 12f;
     [SerializeField] float tamanhoAumentar2 = 25f;
     [SerializeField] float tamanhoDimi = 6f;
-    [SerializeField] float duracao = 2f;
 
     
 
@@ -63,20 +61,15 @@ public class Player : MonoBehaviour
             {
                 playerAnim.SetBool("isWalkX", true);
             }
-            else
-            {
-                playerAnim.SetBool("isWalkX", false);
-            }
-
-
             if (_vertica != 0f)
             {
                 playerAnim.SetBool("isWalkY", true);
 
             }
-            else
+            else if (_vertica == 0f && _horizonta == 0f)
             {
                 playerAnim.SetBool("isWalkY", false);
+                playerAnim.SetBool("isWalkX", false);
             }
         }
     }
