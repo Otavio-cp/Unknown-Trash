@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     [Header("Player")]
     public Animator playerAnim;
     [SerializeField] float tempodeanimacao = 0.93f;
-    [SerializeField] float scal = 1f;
+    [Min (1)] [SerializeField] float scal = 1f;
     [SerializeField]
     private GameObject _ComerBoca;
     [SerializeField] ParticleSystem particolEND;
