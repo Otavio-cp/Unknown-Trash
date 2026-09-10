@@ -18,14 +18,17 @@ public class Player : MonoBehaviour
     public static int itensNecessarios = 3;
     public static int intensganho = 1;
     public static float aumentodetamanho = 0.1f;
- public static bool Natelaupgrades = false;
+    public static bool Natelaupgrades = false;
+    bool fim = false;
 
 
     [Header("Player")]
     public Animator playerAnim;
+    [SerializeField] float tempodeanimacao = 0.93f;
     public float scal = 6f;
     [SerializeField]
     private GameObject _ComerBoca;
+    [SerializeField] ParticleSystem particolEND;
 
     [Header("Barra de Vitoria")]
     [SerializeField] private Slider _barraDeVitoria;
@@ -54,6 +57,15 @@ public class Player : MonoBehaviour
     {
         if (Natelaupgrades == false)
         {
+            if (fim == true)
+            {
+                Instantiate(particolEND, transform.position, Quaternion.identity);
+                tempodeanimacao -= Time.deltaTime;
+                if (tempodeanimacao <= 0f)
+                {
+                    SceneManager.LoadScene("Vitoria");
+                }
+            }
             _horizonta = Input.GetAxis("Horizontal");
             _vertica = Input.GetAxis("Vertical");
 
@@ -90,7 +102,6 @@ public class Player : MonoBehaviour
             itensPegos += intensganho;
             itensParaAumentar += intensganho;
 
-
             if (itensParaAumentar >= itensNecessarios)
             {
                 scal += aumentodetamanho;
@@ -102,8 +113,10 @@ public class Player : MonoBehaviour
 
             if (transform.localScale.x >= 25f)
             {
-                SceneManager.LoadScene("Vitoria");
+                playerAnim.SetBool("TheEnd", true);
+                fim = true;
             }
+                
 
             if (transform.localScale.x >= 6f)
             {
