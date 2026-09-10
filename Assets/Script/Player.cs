@@ -9,8 +9,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]private int vel = 5;
-    [SerializeField]private Rigidbody2D _rb;    
+    [SerializeField] private int vel = 5;
+    [SerializeField] private Rigidbody2D _rb;
     private float _horizonta = 0f;
     private float _vertica = 0f;
     public static int itensPegos = 0;
@@ -18,14 +18,16 @@ public class Player : MonoBehaviour
     public static int itensNecessarios = 3;
     public static int intensganho = 1;
     public static float aumentodetamanho = 0.1f;
- public static bool Natelaupgrades = false;
+    public static bool Natelaupgrades = false;
 
 
     [Header("Player")]
     public Animator playerAnim;
-    public float scal = 6f;
+    [SerializeField] float tempodeanimacao = 0.93f;
+    [SerializeField] float scal = 1f;
     [SerializeField]
     private GameObject _ComerBoca;
+    [SerializeField] ParticleSystem particolEND;
 
     [Header("Barra de Vitoria")]
     [SerializeField] private Slider _barraDeVitoria;
@@ -54,11 +56,16 @@ public class Player : MonoBehaviour
     {
         if (Natelaupgrades == false)
         {
+            
             _horizonta = Input.GetAxis("Horizontal");
             _vertica = Input.GetAxis("Vertical");
 
             _rb.linearVelocity = new Vector2(_horizonta, _vertica).normalized * vel;
 
+            if (tempodeanimacao <= 0f)
+            {
+                SceneManager.LoadScene("Vitoria");
+            }
 
             if (_horizonta != 0f)
             {
@@ -74,6 +81,7 @@ public class Player : MonoBehaviour
                 playerAnim.SetBool("isWalkY", false);
                 playerAnim.SetBool("isWalkX", false);
             }
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
@@ -90,7 +98,6 @@ public class Player : MonoBehaviour
             itensPegos += intensganho;
             itensParaAumentar += intensganho;
 
-
             if (itensParaAumentar >= itensNecessarios)
             {
                 scal += aumentodetamanho;
@@ -102,8 +109,11 @@ public class Player : MonoBehaviour
 
             if (transform.localScale.x >= 25f)
             {
-                SceneManager.LoadScene("Vitoria");
+                tempodeanimacao -= Time.deltaTime;
+                playerAnim.Play("Animetion final");
+                Instantiate(particolEND, transform.position, Quaternion.identity);
             }
+                
 
             if (transform.localScale.x >= 6f)
             {
