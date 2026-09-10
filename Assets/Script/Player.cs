@@ -2,35 +2,33 @@
 
 
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]
-    private int vel = 5;
-
-    [SerializeField]
-    private Rigidbody2D _rb;
-    
+    [SerializeField]private int vel = 5;
+    [SerializeField]private Rigidbody2D _rb;    
     private float _horizonta = 0f;
-    
     private float _vertica = 0f;
-    [Header("Player")]
     public static int itensPegos = 0;
     public static int itensParaAumentar;
     public static int itensNecessarios = 3;
     public static int intensganho = 1;
     public static float aumentodetamanho = 0.1f;
+ public static bool Natelaupgrades = false;
+
+
+    [Header("Player")]
     public Animator playerAnim;
     public float scal = 6f;
     [SerializeField]
     private GameObject _ComerBoca;
 
-    [Header("barra de vitoria")]
-    [SerializeField] Slider _barraDeVitoria;
+    [Header("Barra de Vitoria")]
+    [SerializeField] private Slider _barraDeVitoria;
     private int _barraDeVitoriaMax = 24;
     private float _vitoryBarra;
 
@@ -42,13 +40,12 @@ public class Player : MonoBehaviour
 
     
 
-    public static bool Natelaupgrades = false;
-
+   
     void Start()
     {
         Application.targetFrameRate = 60;
         Screen.fullScreen = true;
-        _barraDeVitoria.highValue = _barraDeVitoriaMax;
+        _barraDeVitoria.maxValue = _barraDeVitoriaMax;
     }
     
 
