@@ -1925,7 +1925,7 @@ MonoBehaviour:
   vel: 5
   _rb: {fileID: 700004891}
   playerAnim: {fileID: 700004892}
-  tempodeanimacao: 4.3
+  tempodeanimacao: 9.3
   scal: 1
   _ComerBoca: {fileID: 4537268018807456327, guid: 6e7b3698b95d393489d4b9a8292655fb, type: 3}
   particolEND: {fileID: 9006772546377544301, guid: 43455ed8c5caad5448e73cb78411294d, type: 3}

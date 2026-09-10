@@ -9,8 +9,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]private int vel = 5;
-    [SerializeField]private Rigidbody2D _rb;    
+    [SerializeField] private int vel = 5;
+    [SerializeField] private Rigidbody2D _rb;
     private float _horizonta = 0f;
     private float _vertica = 0f;
     public static int itensPegos = 0;
@@ -19,13 +19,12 @@ public class Player : MonoBehaviour
     public static int intensganho = 1;
     public static float aumentodetamanho = 0.1f;
     public static bool Natelaupgrades = false;
-    bool fim = false;
 
 
     [Header("Player")]
     public Animator playerAnim;
     [SerializeField] float tempodeanimacao = 0.93f;
-    public float scal = 6f;
+    [SerializeField] float scal = 1f;
     [SerializeField]
     private GameObject _ComerBoca;
     [SerializeField] ParticleSystem particolEND;
@@ -63,6 +62,10 @@ public class Player : MonoBehaviour
 
             _rb.linearVelocity = new Vector2(_horizonta, _vertica).normalized * vel;
 
+            if (tempodeanimacao <= 0f)
+            {
+                SceneManager.LoadScene("Vitoria");
+            }
 
             if (_horizonta != 0f)
             {
@@ -77,15 +80,6 @@ public class Player : MonoBehaviour
             {
                 playerAnim.SetBool("isWalkY", false);
                 playerAnim.SetBool("isWalkX", false);
-            }
-            if (fim == true)
-            {
-                Instantiate(particolEND, transform.position, Quaternion.identity);
-                tempodeanimacao -= Time.deltaTime;
-                if (tempodeanimacao <= 0f)
-                {
-                    SceneManager.LoadScene("Vitoria");
-                }
             }
 
         }
@@ -115,8 +109,9 @@ public class Player : MonoBehaviour
 
             if (transform.localScale.x >= 25f)
             {
-                playerAnim.SetBool("TheEnd", true);
-                fim = true;
+                tempodeanimacao -= Time.deltaTime;
+                playerAnim.Play("Animetion final");
+                Instantiate(particolEND, transform.position, Quaternion.identity);
             }
                 
 
