@@ -26,9 +26,14 @@ public class Player : MonoBehaviour
     public static float aumentodetamanho = 0.1f;
     public Animator playerAnim;
     public float scal = 6f;
-
     [SerializeField]
     private GameObject _ComerBoca;
+
+    [Header("barra de vitoria")]
+    [SerializeField] Slider _barraDeVitoria;
+    private int _barraDeVitoriaMax = 24;
+    private float _vitoryBarra;
+
     [Header("Camera")]
     [SerializeField] Camera _1camera;
     [SerializeField] float tamanhoAumentar = 12f;
@@ -43,6 +48,7 @@ public class Player : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         Screen.fullScreen = true;
+        _barraDeVitoria.highValue = _barraDeVitoriaMax;
     }
     
 
@@ -92,6 +98,8 @@ public class Player : MonoBehaviour
             {
                 scal += aumentodetamanho;
                 transform.localScale = new Vector3(scal, scal, scal);
+                _vitoryBarra = transform.localScale.x;
+                _barraDeVitoria.value = _vitoryBarra - 1;
                 itensParaAumentar = 0;
             }
 
