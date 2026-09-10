@@ -57,15 +57,7 @@ public class Player : MonoBehaviour
     {
         if (Natelaupgrades == false)
         {
-            if (fim == true)
-            {
-                Instantiate(particolEND, transform.position, Quaternion.identity);
-                tempodeanimacao -= Time.deltaTime;
-                if (tempodeanimacao <= 0f)
-                {
-                    SceneManager.LoadScene("Vitoria");
-                }
-            }
+            
             _horizonta = Input.GetAxis("Horizontal");
             _vertica = Input.GetAxis("Vertical");
 
@@ -86,6 +78,16 @@ public class Player : MonoBehaviour
                 playerAnim.SetBool("isWalkY", false);
                 playerAnim.SetBool("isWalkX", false);
             }
+            if (fim == true)
+            {
+                Instantiate(particolEND, transform.position, Quaternion.identity);
+                tempodeanimacao -= Time.deltaTime;
+                if (tempodeanimacao <= 0f)
+                {
+                    SceneManager.LoadScene("Vitoria");
+                }
+            }
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
