@@ -35,12 +35,7 @@ public class Player : MonoBehaviour
     [SerializeField] float tamanhoAumentar2 = 25f;
     [SerializeField] float tamanhoDimi = 6f;
 
-    [Header("Barra de vitoria")]
-    [SerializeField] Slider Barradevida;
-    [SerializeField] float MaximoParaGanhar = 24f;
-    [SerializeField] float TamanhoBarra;
-
-
+    
 
     public static bool Natelaupgrades = false;
 
@@ -48,7 +43,6 @@ public class Player : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         Screen.fullScreen = true;
-        Barradevida.highValue = MaximoParaGanhar;
     }
     
 
@@ -98,8 +92,6 @@ public class Player : MonoBehaviour
             {
                 scal += aumentodetamanho;
                 transform.localScale = new Vector3(scal, scal, scal);
-                TamanhoBarra = transform.localScale.x;
-                Barradevida.value = TamanhoBarra - 1;
                 itensParaAumentar = 0;
             }
 
