@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEditor.Experimental.GraphView;
 
 public class Player : MonoBehaviour
 {
@@ -23,8 +24,9 @@ public class Player : MonoBehaviour
 
     [Header("Player")]
     public Animator playerAnim;
+    [SerializeField] GameObject _player;
     [SerializeField] float tempodeanimacao = 0.93f;
-    [Min (1)] [SerializeField] float scal = 1f;
+    [SerializeField] float scal = 1f;
     [SerializeField]
     private GameObject _ComerBoca;
     [SerializeField] ParticleSystem particolEND;
@@ -45,7 +47,7 @@ public class Player : MonoBehaviour
    
     void Start()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 30;
         Screen.fullScreen = true;
         _barraDeVitoria.maxValue = _barraDeVitoriaMax;
     }
@@ -100,17 +102,19 @@ public class Player : MonoBehaviour
 
             if (itensParaAumentar >= itensNecessarios)
             {
-                scal += aumentodetamanho;
-                transform.localScale = new Vector3(scal, scal, scal);
+                    scal += aumentodetamanho;
+
+                transform.localScale = new Vector3(scal, scal, 1f);
+
                 _vitoryBarra = transform.localScale.x;
                 _barraDeVitoria.value = _vitoryBarra - 1;
                 itensParaAumentar = 0;
             }
 
+            
             if (transform.localScale.x >= 25f)
             {
                 tempodeanimacao -= Time.deltaTime;
-                playerAnim.Play("Animetion final");
                 Instantiate(particolEND, transform.position, Quaternion.identity);
             }
                 
