@@ -7,6 +7,7 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEditor.Experimental.GraphView;
+using JetBrains.Annotations;
 
 public class Player : MonoBehaviour
 {
@@ -21,11 +22,8 @@ public class Player : MonoBehaviour
     public static float aumentodetamanho = 0.1f;
     public static bool Natelaupgrades = false;
 
-
     [Header("Player")]
     public Animator playerAnim;
-    [SerializeField] GameObject _player;
-    [SerializeField] float tempodeanimacao = 0.93f;
     [SerializeField] float scal = 1f;
     [SerializeField]
     private GameObject _ComerBoca;
@@ -42,8 +40,7 @@ public class Player : MonoBehaviour
     [SerializeField] float tamanhoAumentar2 = 25f;
     [SerializeField] float tamanhoDimi = 6f;
 
-    
-
+    public Transform player;
    
     void Start()
     {
@@ -58,31 +55,29 @@ public class Player : MonoBehaviour
     {
         if (Natelaupgrades == false)
         {
-            
+            CameraFollow();
             _horizonta = Input.GetAxis("Horizontal");
             _vertica = Input.GetAxis("Vertical");
 
             _rb.linearVelocity = new Vector2(_horizonta, _vertica).normalized * vel;
 
-            if (tempodeanimacao <= 0f)
-            {
-                SceneManager.LoadScene("Vitoria");
-            }
-
             if (_horizonta != 0f)
             {
-                playerAnim.SetBool("isWalkX", true);
+                playerAnim.SetBool("IsWalkX", true);
             }
             if (_vertica != 0f)
             {
-                playerAnim.SetBool("isWalkY", true);
+                playerAnim.SetBool("IsWalkY", true);
 
             }
             else if (_vertica == 0f && _horizonta == 0f)
             {
-                playerAnim.SetBool("isWalkY", false);
-                playerAnim.SetBool("isWalkX", false);
+                playerAnim.SetBool("IsWalkY", false);
+                playerAnim.SetBool("IsWalkX", false);
             }
+
+            
+
 
         }
     }
@@ -114,7 +109,7 @@ public class Player : MonoBehaviour
             
             if (transform.localScale.x >= 25f)
             {
-                tempodeanimacao -= Time.deltaTime;
+                SceneManager.LoadScene("Vitoria");
                 Instantiate(particolEND, transform.position, Quaternion.identity);
             }
                 
@@ -137,6 +132,16 @@ public class Player : MonoBehaviour
                 _1camera.orthographicSize = tamanhoAumentar;
             }
         }
+
+          
+
+    
         
+    }
+
+    public void CameraFollow()
+    {   Vector3 cameraPosition = new Vector3(player.position.x, player.position.y, -10f);
+        _1camera.transform.position = cameraPosition;
+        Vector3.Lerp (_1camera.transform.position, cameraPosition, Time.deltaTime * 5f);
     }
 }
