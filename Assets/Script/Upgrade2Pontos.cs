@@ -23,6 +23,7 @@ public class Upgrade2Pontos : MonoBehaviour
             valorUpgrade *= multiplicador;
             timerQNT += 10f;
             preço.text = $"Score value: {valorUpgrade}";
+            Tutorial2.terminou = true;
         }
     }
 }

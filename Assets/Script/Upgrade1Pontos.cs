@@ -25,6 +25,7 @@ public class Upgrade1Pontos : MonoBehaviour
             Player.aumentodetamanho += aumentodeTamanho2;
             valorUpgrade *= aumentoDePreço;
             preço.text = $"Score value: {valorUpgrade}";
+            Tutorial2.terminou = true;
         }
     }
 

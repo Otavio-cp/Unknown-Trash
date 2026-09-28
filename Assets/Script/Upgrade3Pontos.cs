@@ -21,6 +21,7 @@ public class Upgrade3Pontos : MonoBehaviour
             valorUpgrade *= valorMutiplicador;
             Player.intensganho += aumentodeitens;
             preço.text = $"Score value: {valorUpgrade}";
+            Tutorial2.terminou = true;
         }
     }
 }

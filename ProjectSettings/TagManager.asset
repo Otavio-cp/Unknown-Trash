@@ -60,5 +60,8 @@ TagManager:
   - name: HUD
     uniqueID: 1614302051
     locked: 0
+  - name: New Layer 7
+    uniqueID: 1959233919
+    locked: 0
   m_RenderingLayers:
   - Default
