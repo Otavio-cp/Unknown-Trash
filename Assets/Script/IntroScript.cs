@@ -10,7 +10,7 @@ public class IntroScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("cutscene");
         }
     }
 }

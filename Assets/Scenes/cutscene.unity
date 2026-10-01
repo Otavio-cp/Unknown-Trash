@@ -471,8 +471,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 1744580309
-  m_SortingLayer: 3
+  m_SortingLayerID: -1282640283
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -36695,8 +36695,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -33947863
-  m_SortingLayer: 2
+  m_SortingLayerID: -1282640283
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300066, guid: 7810966f0f690954c87305933cabf2b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -42664,8 +42664,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -33947863
-  m_SortingLayer: 2
+  m_SortingLayerID: 1959233919
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1192856051, guid: fc1d67a4622f38e4a97f5152c1977ca9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -43820,7 +43820,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.33
+  near clip plane: 15
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -43849,7 +43849,7 @@ Transform:
   m_GameObject: {fileID: 1819703411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.13999939, y: 0.059999943, z: -63.93527}
+  m_LocalPosition: {x: 57.72, y: 0.059999943, z: -63.93527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
