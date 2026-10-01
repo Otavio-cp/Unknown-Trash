@@ -83,9 +83,12 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision2D)
     {
-        Destroy(collision2D.gameObject);
-        aumentodoscore();
-        Instantiate(_ComerBoca, transform.position, Quaternion.identity);
+        if (collision2D.gameObject.CompareTag("lixo"))
+        {
+            Destroy(collision2D.gameObject);
+            aumentodoscore();
+            Instantiate(_ComerBoca, transform.position, Quaternion.identity);
+        }
     }
 
     void aumentodoscore()

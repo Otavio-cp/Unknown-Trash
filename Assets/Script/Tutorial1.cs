@@ -1,34 +1,25 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tutorial1 : MonoBehaviour
 {
-    [SerializeField] float timer1 = 0f;
+    [SerializeField] int itensNasala;
     [SerializeField] GameObject tuto1;
     [SerializeField] GameObject tutoliberar;
-    public static bool terminou = false;
-
-
-    private void FixedUpdate()
+    public void liberarSala()
     {
-        if (terminou == false)
+        itensNasala--;
+        if (itensNasala <= 0)
         {
-            if (timer1 >= 5f)
-            {
-                tuto1.SetActive(false);
-                terminou = true;
-            }
-            else
-            {
-                timer1 += Time.deltaTime;
-            }
+            tutoliberar.SetActive(false);
+            tuto1.SetActive(true);
         }
     }
-    public void liberarSala(int itensNaSala)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (itensNaSala == 0)
+        if (other.gameObject.CompareTag("Sairdotuto"))
         {
-            tuto1.SetActive(false);
-            tutoliberar.SetActive(true);
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }
