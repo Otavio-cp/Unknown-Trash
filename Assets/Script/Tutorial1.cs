@@ -4,12 +4,9 @@ public class Tutorial1 : MonoBehaviour
 {
     [SerializeField] float timer1 = 0f;
     [SerializeField] GameObject tuto1;
+    [SerializeField] GameObject tutoliberar;
     public static bool terminou = false;
 
-    void Start()
-    {
-        tuto1.SetActive(true);
-    }
 
     private void FixedUpdate()
     {
@@ -24,6 +21,14 @@ public class Tutorial1 : MonoBehaviour
             {
                 timer1 += Time.deltaTime;
             }
+        }
+    }
+    public void liberarSala(int itensNaSala)
+    {
+        if (itensNaSala == 0)
+        {
+            tuto1.SetActive(false);
+            tutoliberar.SetActive(true);
         }
     }
 }

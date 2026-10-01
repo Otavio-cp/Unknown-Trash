@@ -55,11 +55,11 @@ public class Player : MonoBehaviour
     {
         if (Natelaupgrades == false)
         {
-            CameraFollow();
+            
             _horizonta = Input.GetAxis("Horizontal");
             _vertica = Input.GetAxis("Vertical");
 
-            _rb.linearVelocity = new Vector2(_horizonta, _vertica).normalized * vel;
+            _rb.linearVelocity = new Vector2(_horizonta, _vertica) * vel;
 
             if (_horizonta != 0f)
             {
@@ -137,11 +137,5 @@ public class Player : MonoBehaviour
 
     
         
-    }
-
-    public void CameraFollow()
-    {   Vector3 cameraPosition = new Vector3(player.position.x, player.position.y, -10f);
-        _1camera.transform.position = cameraPosition;
-        Vector3.Lerp (_1camera.transform.position, cameraPosition, Time.deltaTime * 5f);
     }
 }
