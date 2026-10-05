@@ -6218,6 +6218,37 @@ MonoBehaviour:
   Left: {fileID: 0}
   Right: {fileID: 0}
   particleSystemSpawn: {fileID: 8145679568297885664, guid: 781882811e195304497c89d99bb9172e, type: 3}
+--- !u!1 &1792984952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792984953}
+  m_Layer: 0
+  m_Name: cutscenefinal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1792984953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792984952}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.63303, y: -7.17744, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1796218592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7553,3 +7584,4 @@ SceneRoots:
   - {fileID: 727593230}
   - {fileID: 700004894}
   - {fileID: 1152305018}
+  - {fileID: 1792984953}
