@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEditor.Experimental.GraphView;
 using JetBrains.Annotations;
+using UnityEngine.Timeline;
 
 public class Player : MonoBehaviour
 {
@@ -114,6 +115,7 @@ public class Player : MonoBehaviour
             {
                 SceneManager.LoadScene("Vitoria");
                 Instantiate(particolEND, transform.position, Quaternion.identity);
+                
             }
                 
 
