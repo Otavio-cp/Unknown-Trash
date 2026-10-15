@@ -6,6 +6,7 @@ public class ColetarTuto : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D colision)
     {
         Destroy(gameObject);
+        Player.itensPegos--;
         tutorial1.liberarSala();
     }
 }
