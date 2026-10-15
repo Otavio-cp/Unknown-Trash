@@ -5,19 +5,19 @@ using UnityEngine.SceneManagement;
 public class Cutcene : MonoBehaviour
 {
     [SerializeField] PlayableDirector timeline;
+    [SerializeField] float timeTotimeline = 8.566f;  // EU amo o FAKER do League Of Legends >:3
+    [SerializeField] Player player;
 
-    void OnEnable()
+    public void StartTimeline()
     {
-        timeline.stopped += TerminouTimeline;
+        timeline.Play();
+        timeTotimeline -= Time.deltaTime;
+        while (timeTotimeline == 0)
+        {
+            SceneManager.LoadScene("Vitoria");
+        }
     }
 
-    void OnDisable()
-    {
-        timeline.stopped -= TerminouTimeline;
-    }
 
-    void TerminouTimeline(PlayableDirector director)
-    {
-        SceneManager.LoadScene("Vitory");
-    }
+
 }
