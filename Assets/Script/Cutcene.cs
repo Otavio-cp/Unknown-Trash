@@ -8,13 +8,12 @@ public class Cutcene : MonoBehaviour
     [SerializeField] float timeTotimeline = 8.566f;  // EU amo o FAKER do League Of Legends >:3
     [SerializeField] Player player;
 
-    public void StartTimeline()
+    private void Update()
     {
-        timeline.Play();
-        timeTotimeline -= Time.deltaTime;
-        while (timeTotimeline == 0)
+        if (player.cutscene == true)
         {
-            SceneManager.LoadScene("Vitoria");
+            timeline.Play();
+            Invoke("Vitoria", timeTotimeline);
         }
     }
 

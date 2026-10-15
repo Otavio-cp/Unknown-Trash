@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     public static int itensNecessarios = 3;
     public static int intensganho = 1;
     public static float aumentodetamanho = 0.1f;
+    public bool cutscene = false;
     public static bool Natelaupgrades = false;
 
     [Header("Player")]
@@ -113,7 +114,7 @@ public class Player : MonoBehaviour
             
             if (transform.localScale.x >= 25f)
             {
-                SceneManager.LoadScene("Vitoria");
+                cutscene = true;
                 Instantiate(particolEND, transform.position, Quaternion.identity);
                 
             }
