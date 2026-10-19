@@ -75,9 +75,7 @@ public class Player : MonoBehaviour
             {
                 playerAnim.SetBool("IsWalkY", false);
                 playerAnim.SetBool("IsWalkX", false);
-            }
-
-            
+            } 
 
 
         }
@@ -136,11 +134,6 @@ public class Player : MonoBehaviour
             {
                 _1camera.orthographicSize = tamanhoAumentar;
             }
-        }
-
-          
-
-    
-        
+        } 
     }
 }
