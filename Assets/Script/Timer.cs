@@ -12,6 +12,8 @@ public class Timer : MonoBehaviour
     [SerializeField] private float _duration = 1f;
     [SerializeField] private TMP_Text texto;
 
+    [SerializeField] paused _paused;
+
     [SerializeField]
     private Animator _TimerAni;
 
@@ -44,6 +46,9 @@ public class Timer : MonoBehaviour
         {
             _telatempoesgotado.SetActive(true);
             Player.Natelaupgrades = true;
+            _paused.pausado = false;
+            _paused.pauseMenu.enabled = false;
+            Time.timeScale = 0f;
         }
     }
 }

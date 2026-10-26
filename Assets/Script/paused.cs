@@ -2,17 +2,27 @@ using UnityEngine;
 
 public class paused : MonoBehaviour
 {
-    private bool pausado;
-    [SerializeField] Canvas pauseMenu;
+    public bool pausado;
+    public Canvas pauseMenu;
+
+
+    void Start()
+    {
+        pausado = false;
+        pauseMenu.enabled = false;
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (pausado)
-                Continuar();
-            else
-                Pausar();
+            if(Player.Natelaupgrades == false)
+            {
+                if (pausado)
+                    Continuar();
+                else
+                    Pausar();
+            }
         }
     }
 
