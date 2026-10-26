@@ -14,7 +14,7 @@ public class Upgrade1Pontos : MonoBehaviour
 
     private void Awake()
     {
-        preço.text = $"Score value: {valorUpgrade}";
+        preço.text = $"Pontos Valor: {valorUpgrade}";
     }
 
     public void OnUpdate1()
@@ -24,7 +24,7 @@ public class Upgrade1Pontos : MonoBehaviour
             Player.itensPegos -= valorUpgrade;
             Player.aumentodetamanho += aumentodeTamanho2;
             valorUpgrade *= aumentoDePreço;
-            preço.text = $"Score value: {valorUpgrade}";
+            preço.text = $"Pontos Valor: {valorUpgrade}";
             Tutorial2.terminou = true;
         }
     }

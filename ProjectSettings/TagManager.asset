@@ -65,5 +65,8 @@ TagManager:
   - name: New Layer 7
     uniqueID: 1959233919
     locked: 0
+  - name: Cutscene
+    uniqueID: 3055396249
+    locked: 0
   m_RenderingLayers:
   - Default

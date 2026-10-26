@@ -9,6 +9,7 @@ public class Opcoes : MonoBehaviour
         paused.pausado = false;
         paused.pauseMenu.enabled = false;
         Time.timeScale = 1f;
+
         SceneManager.LoadScene("Main_Menu 1");
     }
 

@@ -11,7 +11,7 @@ public class Upgrade3Pontos : MonoBehaviour
     [SerializeField]TMP_Text preço;
     private void Awake()
     {
-        preço.text = $"Score value: {valorUpgrade}";
+        preço.text = $"Pontos Valor: {valorUpgrade}";
     }
     public void Upgrade2()
     {
@@ -20,7 +20,7 @@ public class Upgrade3Pontos : MonoBehaviour
             Player.itensPegos -= valorUpgrade;
             valorUpgrade *= valorMutiplicador;
             Player.intensganho += aumentodeitens;
-            preço.text = $"Score value: {valorUpgrade}";
+            preço.text = $"Pontos Valor: {valorUpgrade}";
             Tutorial2.terminou = true;
         }
     }

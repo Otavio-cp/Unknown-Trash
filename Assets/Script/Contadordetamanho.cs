@@ -7,6 +7,6 @@ public class Contadordetamanho : MonoBehaviour
     
     void Update()
     {
-        Contador.text = "Score: " + Player.itensPegos;
+        Contador.text = "Pontos: " + Player.itensPegos;
     }
 }

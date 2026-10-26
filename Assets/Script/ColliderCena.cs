@@ -20,7 +20,13 @@ public class ColliderCena : MonoBehaviour
 
         if (timer >= 16)
         {
-            SceneManager.LoadScene("tutorial");
+            Pular();
         }
     }
+
+    public void Pular()
+    {
+        SceneManager.LoadScene("tutorial");
+    }
+
 }
