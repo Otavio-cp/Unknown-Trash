@@ -22,4 +22,5 @@ public class Opcoes : MonoBehaviour
             paused.pauseMenu.enabled = false;
         }
     }
+
 }
