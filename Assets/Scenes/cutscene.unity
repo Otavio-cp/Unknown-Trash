@@ -36182,8 +36182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PULAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00f7b69d1718bf04d8324d264966aa07, type: 2}
-  m_sharedMaterial: {fileID: -2436226798296982577, guid: 00f7b69d1718bf04d8324d264966aa07, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2d1381f18cfee9d40991feeea41a159a, type: 2}
+  m_sharedMaterial: {fileID: -776913028877827333, guid: 2d1381f18cfee9d40991feeea41a159a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

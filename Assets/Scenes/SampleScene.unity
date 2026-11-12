@@ -594,8 +594,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MENU
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00f7b69d1718bf04d8324d264966aa07, type: 2}
-  m_sharedMaterial: {fileID: -2436226798296982577, guid: 00f7b69d1718bf04d8324d264966aa07, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2d1381f18cfee9d40991feeea41a159a, type: 2}
+  m_sharedMaterial: {fileID: -776913028877827333, guid: 2d1381f18cfee9d40991feeea41a159a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -619,10 +619,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 140
-  m_fontSizeBase: 24
+  m_fontSize: 161.9
+  m_fontSizeBase: 161.9
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 140
   m_fontStyle: 0
@@ -6689,7 +6689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
+  m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 0.6156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7487,8 +7487,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CONTINUE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00f7b69d1718bf04d8324d264966aa07, type: 2}
-  m_sharedMaterial: {fileID: -2436226798296982577, guid: 00f7b69d1718bf04d8324d264966aa07, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2d1381f18cfee9d40991feeea41a159a, type: 2}
+  m_sharedMaterial: {fileID: -776913028877827333, guid: 2d1381f18cfee9d40991feeea41a159a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7512,10 +7512,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 111
-  m_fontSizeBase: 24
+  m_fontSize: 87.02
+  m_fontSizeBase: 87.02
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 111
   m_fontStyle: 0

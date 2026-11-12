@@ -11,7 +11,7 @@ public class PlayQuit : MonoBehaviour
     {
         if (isHistori == false)
         {
-            SceneManager.LoadScene("intro");
+            SceneManager.LoadScene("cutscene");
         }
         else
         {
