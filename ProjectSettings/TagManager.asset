@@ -68,5 +68,8 @@ TagManager:
   - name: Cutscene
     uniqueID: 3055396249
     locked: 0
+  - name: "Trasi\xE7\xE3o"
+    uniqueID: 704927931
+    locked: 0
   m_RenderingLayers:
   - Default

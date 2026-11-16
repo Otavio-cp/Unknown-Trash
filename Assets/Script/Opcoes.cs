@@ -6,6 +6,7 @@ public class Opcoes : MonoBehaviour
     [SerializeField] paused paused;
     public void BackMenu()
     {
+        print("BackMenu");
         paused.pausado = false;
         paused.pauseMenu.enabled = false;
         Time.timeScale = 1f;

@@ -7,15 +7,19 @@ public class PlayQuit : MonoBehaviour
 {
     public static bool isHistori = false;
 
+    [SerializeField] LevelLoading levelLoading;
+    public string sceneNameStart;
+    public string sceneNameGame;
     public void Jogar()
     {
         if (isHistori == false)
         {
-            SceneManager.LoadScene("cutscene");
+            levelLoading.Transition(sceneNameStart);
+            isHistori = true;
         }
         else
         {
-            SceneManager.LoadScene("SampleScene");
+            levelLoading.Transition(sceneNameGame);
         }
         
     }
