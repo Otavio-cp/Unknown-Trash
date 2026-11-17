@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class Opcoes : MonoBehaviour
 {
     [SerializeField] paused paused;
+    [SerializeField] LevelLoading levelLoading;
     public void BackMenu()
     {
         print("BackMenu");
@@ -11,7 +12,7 @@ public class Opcoes : MonoBehaviour
         paused.pauseMenu.enabled = false;
         Time.timeScale = 1f;
 
-        SceneManager.LoadScene("Main_Menu 1");
+        levelLoading.Transition("Main_Menu 1");
     }
 
     public void ContinuePaused()

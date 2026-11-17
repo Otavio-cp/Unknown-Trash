@@ -5,16 +5,15 @@ using UnityEngine.SceneManagement;
 public class LevelLoading : MonoBehaviour
 {
     [SerializeField] Animator transitionAnimator;
-
     public void Transition(string sceneName)
     {
-        StartCoroutine(LoadScene(sceneName));
+        StartCoroutine(LoadSceneTransition(sceneName));
 
     }
 
-    IEnumerator LoadScene(string sceneName)
+    IEnumerator LoadSceneTransition(string sceneName)
     {
-        transitionAnimator.SetTrigger("Startcdsuhfdsfj09uy583w hiru8yzdwh fn");
+        transitionAnimator.SetTrigger("Start");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneName);
     }

@@ -7,19 +7,17 @@ public class PlayQuit : MonoBehaviour
 {
     public static bool isHistori = false;
 
-    [SerializeField] LevelLoading levelLoading;
-    public string sceneNameStart;
-    public string sceneNameGame;
+    public LevelLoading levelLoading;
     public void Jogar()
     {
         if (isHistori == false)
         {
-            levelLoading.Transition(sceneNameStart);
+            levelLoading.Transition("cutscene");
             isHistori = true;
         }
         else
         {
-            levelLoading.Transition(sceneNameGame);
+            levelLoading.Transition("SampleScene");
         }
         
     }
@@ -35,10 +33,11 @@ public class PlayQuit : MonoBehaviour
     }
     public void Quitar()
     {
+        levelLoading.Transition("start");
         Application.Quit();
     }
     public void Creditos()
     {
-        SceneManager.LoadScene("Creditos");
+        levelLoading.Transition("Creditos");
     }
 }

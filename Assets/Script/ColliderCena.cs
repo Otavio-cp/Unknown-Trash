@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 public class ColliderCena : MonoBehaviour
 {
 
-    public float timer = 1;
+    public float timer = 2;
+
+    [SerializeField] LevelLoading levelLoading;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
