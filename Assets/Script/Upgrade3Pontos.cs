@@ -9,6 +9,8 @@ public class Upgrade3Pontos : MonoBehaviour
     [SerializeField]static int valorMutiplicador = 2;
 
     [SerializeField]TMP_Text preço;
+    [SerializeField] AudioSource buy;
+    [SerializeField] AudioSource error;
     private void Awake()
     {
         preço.text = $"Pontos Valor: {valorUpgrade}";
@@ -22,6 +24,12 @@ public class Upgrade3Pontos : MonoBehaviour
             Player.intensganho += aumentodeitens;
             preço.text = $"Pontos Valor: {valorUpgrade}";
             Tutorial2.terminou = true;
+            buy.Play();
+        }
+        else
+        {
+            Debug.Log("Sem pontos suficientes");
+            error.Play();
         }
     }
 }

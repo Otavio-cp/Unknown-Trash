@@ -11,6 +11,8 @@ public class Upgrade2Pontos : MonoBehaviour
     [SerializeField] int multiplicador = 2;
 
     [SerializeField] TMP_Text preço;
+    [SerializeField] AudioSource buy;
+    [SerializeField] AudioSource error;
     private void Awake()
     {
         preço.text = $"Pontos Valor: {valorUpgrade}";
@@ -24,6 +26,11 @@ public class Upgrade2Pontos : MonoBehaviour
             timerQNT += 10f;
             preço.text = $"Pontos Valor: {valorUpgrade}";
             Tutorial2.terminou = true;
+            buy.Play();
+        }
+        else
+        {
+            error.Play();
         }
     }
 }

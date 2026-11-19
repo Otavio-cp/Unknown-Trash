@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private int vel = 5;
     [SerializeField] private Rigidbody2D _rb;
+    [SerializeField] LevelLoading level;
     private float _horizonta = 0f;
     private float _vertica = 0f;
     public static int itensPegos = 0;
@@ -113,7 +114,7 @@ public class Player : MonoBehaviour
             {
                 cutscene = true;
                 Instantiate(particolEND, transform.position, Quaternion.identity);
-                
+                level.Transition("Vitoria");
             }
                 
 

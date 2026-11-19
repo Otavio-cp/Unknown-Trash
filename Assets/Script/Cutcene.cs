@@ -7,6 +7,8 @@ public class Cutcene : MonoBehaviour
     [SerializeField] PlayableDirector timeline;
     [SerializeField] float timeTotimeline = 8.566f;  // EU amo o FAKER do League Of Legends >:3
     [SerializeField] Player player;
+    [SerializeField] LevelLoading level;
+    [SerializeField] Canvas canvas1Hub;
 
     private void Start()
     {
@@ -18,11 +20,12 @@ public class Cutcene : MonoBehaviour
         if (player.cutscene == true)
         {
             timeline.Play();
+            canvas1Hub.enabled = false;
             timeTotimeline -= Time.deltaTime;
         }
-        if (timeTotimeline <= 0)
+        if (timeTotimeline <= 1)
         {
-            SceneManager.LoadScene("Vitoria");
+            level.Transition("Vitoria");
         }
     }
 
