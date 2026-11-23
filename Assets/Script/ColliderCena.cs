@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 public class ColliderCena : MonoBehaviour
 {
 
-    public float timer = 2;
+    private float timer = 2;
 
     [SerializeField] LevelLoading levelLoading;
+    [SerializeField] AudioSource click;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,13 +23,14 @@ public class ColliderCena : MonoBehaviour
 
         if (timer >= 16)
         {
-            Pular();
+            levelLoading.Transition("tutorial");
         }
     }
 
     public void Pular()
     {
-        SceneManager.LoadScene("tutorial");
+        levelLoading.Transition("tutorial");
+        click.Play();
     }
 
 }
