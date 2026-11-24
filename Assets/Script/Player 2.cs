@@ -8,6 +8,7 @@ public class Player2 : MonoBehaviour
     [SerializeField] Animator playerAnime;
     [SerializeField] float vel = 3f;
     [SerializeField] int playerHealth = 3;
+    [SerializeField] SpriteRenderer playerSprite;
 
     // Update is called once per frame
     void Update()
@@ -17,9 +18,15 @@ public class Player2 : MonoBehaviour
 
         _rb.linearVelocity = new Vector2(_horizonta, _vertica) * vel;
 
-        if (_horizonta != 0f)
+        if (_horizonta > 0f)
         {
             playerAnime.SetBool("IsWalkX",  true);
+            playerSprite.flipX = false;
+        }
+        else if (_horizonta < 0f)
+        {
+            playerAnime.SetBool("IsWalkX", true);
+            playerSprite.flipX = true;
         }
         if (_vertica != 0f)
         {
