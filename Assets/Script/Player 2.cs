@@ -7,52 +7,39 @@ public class Player2 : MonoBehaviour
     [SerializeField] Rigidbody2D _rb;
     [SerializeField] Animator playerAnime;
     [SerializeField] float vel = 3f;
-    [SerializeField] int playerHealth = 3;
-    [SerializeField] SpriteRenderer playerSprite;
+    public SpriteRenderer playerSprite;
+    [SerializeField]
+    float _vertica;
+    [SerializeField]
+    float _horizonta;
 
     // Update is called once per frame
     void Update()
     {
-        float _horizonta = Input.GetAxis("Horizontal");
-        float _vertica = Input.GetAxis("Vertical");
+        _horizonta = Input.GetAxis("Horizontal");
+        _vertica = Input.GetAxis("Vertical");
 
         _rb.linearVelocity = new Vector2(_horizonta, _vertica) * vel;
 
-        if (_horizonta > 0f)
+        // Virar sprite
+        if (_horizonta > 0)
         {
-            playerAnime.SetBool("IsWalkX",  true);
             playerSprite.flipX = false;
         }
-        else if (_horizonta < 0f)
+        else if (_horizonta < 0)
         {
-            playerAnime.SetBool("IsWalkX", true);
             playerSprite.flipX = true;
         }
-        if (_vertica != 0f)
-        {
-            playerAnime.SetBool("IsWalkY", true);
 
-        }
-        else if (_vertica == 0f && _horizonta == 0f)
+        // Animação
+        if (_horizonta != 0 || _vertica != 0)
         {
-            playerAnime.SetBool("IsWalkY", false);
-            playerAnime.SetBool("IsWalkX", false);
+            playerAnime.SetBool("ANDAR", true);
         }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        playerHealth -= damage;
-        if (playerHealth <= 0)
+        else
         {
-            Die();
+            playerAnime.SetBool("ANDAR", false);
         }
-    }
-
-    private void Die()
-    {
-        SceneManager.LoadScene("fase2");
-        Debug.Log("Player morreu!");
     }
 
 }
