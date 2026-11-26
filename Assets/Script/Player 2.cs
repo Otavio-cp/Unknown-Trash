@@ -9,19 +9,21 @@ public class Player2 : MonoBehaviour
     [SerializeField] float vel = 3f;
     public SpriteRenderer playerSprite;
     [SerializeField] float TimerforEfects;
+    [SerializeField] GameObject particulas;
     [SerializeField] ParticleSystem playerParticle;
-    [SerializeField] GameObject playerPrefab;
-    [SerializeField] GameObject bagulhoPrefab;
     [SerializeField]
     float _vertica;
     [SerializeField]
     float _horizonta;
 
-    // Update is called once per frame
-
-    private void BagulhoSeguir()
+    void Start()
     {
-                bagulhoPrefab.transform.position = gameObject.transform.position;
+        _rb = GetComponent<Rigidbody2D>();
+        playerAnime = GetComponent<Animator>();
+        playerSprite = GetComponent<SpriteRenderer>();
+        playerParticle = GetComponent<ParticleSystem>();
+        playerParticle = particulas.GetComponent<ParticleSystem>();
+        playerParticle.Stop();
     }
     void Update()
     {
@@ -41,8 +43,7 @@ public class Player2 : MonoBehaviour
         {
             playerAnime.SetBool("ANDAR", true);
             playerParticle.Stop();
-            TimerforEfects = 0;
-            BagulhoSeguir();
+            TimerforEfects = 0f;
         }
         else
         {
