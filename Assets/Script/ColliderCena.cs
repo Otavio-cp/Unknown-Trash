@@ -24,11 +24,4 @@ public class ColliderCena : MonoBehaviour
         levelLoading.Transition("tutorial");
         click.Play();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            levelLoading.Transition("Vitoria");
-        }
-    }
 }

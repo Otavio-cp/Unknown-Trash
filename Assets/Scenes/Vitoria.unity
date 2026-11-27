@@ -221,6 +221,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &124513828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2378177918451845683, guid: 9f9743b8f3870424bb16259c0546bf38, type: 3}
+  m_PrefabInstance: {fileID: 1875146148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44b346fd29564ed46acdaff8a03695c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelLoading
 --- !u!1 &172495472
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -247.94, y: -416}
+  m_AnchoredPosition: {x: -401, y: -427}
   m_SizeDelta: {x: 284.86, y: 84.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172495474
@@ -367,8 +378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f60e66dfc46b5b4e901274ba52a0a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayQuit
-  levelLoading: {fileID: 0}
-  click: {fileID: 0}
+  levelLoading: {fileID: 124513828}
+  click: {fileID: 1043183808}
 --- !u!1 &276739575
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2266395591118621882, guid: 54af68d4bc641904fb6982e5a41559e5, type: 3}
+  m_Sprite: {fileID: -5903435784246659000, guid: 7e4875be1170e3742bcbe5012571a31a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -585,7 +596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 296, y: -416}
+  m_AnchoredPosition: {x: 401, y: -425}
   m_SizeDelta: {x: 284.86, y: 84.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1043183804
@@ -695,8 +706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Opcoes
   paused: {fileID: 0}
-  levelLoading: {fileID: 0}
-  click: {fileID: 0}
+  levelLoading: {fileID: 124513828}
+  click: {fileID: 1043183808}
 --- !u!82 &1043183808
 AudioSource:
   m_ObjectHideFlags: 0

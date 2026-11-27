@@ -8,13 +8,22 @@ public class Opcoes : MonoBehaviour
     [SerializeField] AudioSource click;
     public void BackMenu()
     {
-        print("BackMenu");
-        paused.pausado = false;
-        paused.pauseMenu.enabled = false;
-        Time.timeScale = 1f;
-
-        levelLoading.Transition("Main_Menu 1");
-        click.Play();
+        if (paused != null)
+        {
+            print("BackMenu");
+            paused.pausado = false;
+            paused.pauseMenu.enabled = false;
+            levelLoading.Transition("Main_Menu 1");
+            Time.timeScale = 1f;
+            click.Play();
+        }
+        else
+        {
+            print("BackMenu");
+            levelLoading.Transition("Main_Menu 1");
+            Time.timeScale = 1f;
+            click.Play();
+        }
     }
 
     public void ContinuePaused()
